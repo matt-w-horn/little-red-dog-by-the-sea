@@ -27,13 +27,7 @@ import scene_on_tv  # noqa: E402
 def main():
     pose_name, shot_path = sys.argv[1], sys.argv[2]
     when = datetime.strptime(sys.argv[3], '%Y-%m-%d %H:%M:%S')
-    shot = np.asarray(Image.open(shot_path).convert('RGB'))
-    if shot.shape != (1080, 1920, 3):
-        raise SystemExit(f'{shot_path}: {shot.shape[1]} x {shot.shape[0]}, not 1920 x 1080')
-    blocks = shot.reshape(270, 4, 480, 4, 3)
-    uniform = (blocks.max(axis=(1, 3)) == blocks.min(axis=(1, 3))).all(axis=2).mean()
-    small = shot[2::4, 2::4]
-    Image.fromarray(small).save(shot_path[:-4] + '-480.png')
+    uniform, small = scene_on_tv.read_screenshot(shot_path)
 
     sc = scene.scene()
     pose = next(p for p in sc['dog']['poses'] + [sc['house']['pose']] if p['name'] == pose_name)

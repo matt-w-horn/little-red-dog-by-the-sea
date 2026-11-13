@@ -38,8 +38,7 @@ MIX, STEP = 12, 85
 def measure(folder):
     """-> rows (state, name, file, size ok, tones, limit, mixed per 100, one-step per 100) for the art under folder."""
     sys.path.insert(0, str(folder / 'tools'))
-    for m in ('scene_dither',):
-        sys.modules.pop(m, None)
+    sys.modules.pop('scene_dither', None)
     import scene_dither
     how = dict(scene_dither.HOW)
     sys.path.pop(0)
@@ -48,7 +47,7 @@ def measure(folder):
     for state, st in sc['states'].items():
         for name in ('sky', 'sea', 'sand'):
             a = np.asarray(Image.open(folder / 'art' / 'layers' / st[name])).astype(np.int64)
-            vals, counts = np.unique(a[a > 0], return_counts=True)
+            vals = np.unique(a[a > 0])
             # the ramp: the longest run of consecutive indexes among those the layer uses
             runs, start = [], vals[0]
             for k in range(1, len(vals) + 1):

@@ -258,7 +258,7 @@ def sand_bases(roles, beach, sb):
     def colour(k, state, month):
         if state in SAND_STATE:                 # set by hand: the dog must stand out from the sand (see SAND_STATE)
             c = tones(SAND_STATE[state], n)[k]
-            return sb.scene_months.tint(c, month, 'land', state) if sb.scene_months and month else c
+            return sb.scene_months.tint(c, month, 'land') if month else c
         c = sb.lit(day[k], state, month, 'sand')
         return night_sand(c) if state == 'night' else c
     ids = ramp_roles(sb, roles, 'SAND', day, 'sand, from the lightest to the wet', colour)

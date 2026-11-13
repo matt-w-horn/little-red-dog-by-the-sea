@@ -17,9 +17,7 @@ Sun times: minutes after midnight in standard time (UTC-8) on the 15th of each m
 for 37.77 north, 122.42 west, the sun's upper edge on the horizon with refraction (zenith 90.833 degrees). scene.py
 changes them evenly from one 15th to the next and adds an hour while summer time is on.
 Twilight: by the same equation the sun is 6 degrees under the horizon (the end of civil twilight) 26 to 31 minutes
-after sunset there. Night begins TWILIGHT minutes after sunset and ends as long before sunrise: dusk used to
-end 40 minutes after sunset, but it is completely dark well before that (33 minutes after sunset on a
-November evening).
+after sunset there. Night begins TWILIGHT minutes after sunset and ends as long before sunrise.
 """
 
 SUNRISE = [444, 420, 382, 335, 299, 287, 299, 325, 350, 377, 410, 438]
@@ -114,7 +112,7 @@ def shift(colour, hue, sat, val):
     return (int(r * 255 + 0.5) << 16) | (int(g * 255 + 0.5) << 8) | int(b * 255 + 0.5)
 
 
-def tint(colour, month, what, state):
+def tint(colour, month, what):
     """A day colour of the base design as month 1..12 shows it. what: 'grass' (colour is one of GRASS_BASE), a key of
     BLOOM, a key of SHIFT, or anything else ('land': only the month's light changes it)."""
     if what == 'grass':

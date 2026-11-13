@@ -36,9 +36,7 @@ def load(folder, name):
 
 def screen_factors(scene, when):
     """Every (red, green, blue) factor the screen can have at this moment: the brightness depends on how long the
-    screensaver has run (scene.evening_factors), which a screenshot does not say. One entry for an older scene.py."""
-    if 'hold_minutes' not in scene.scene().get('evening', {}):
-        return None
+    screensaver has run (scene.evening_factors), which a screenshot does not say."""
     e = scene.scene()['evening']
     span = 60_000 * (e['hold_minutes'] + e['fade_minutes'])
     return sorted({scene.evening_factors(when, d) for d in range(0, span + 1, 250)} | {scene.evening_factors(when)})
@@ -55,16 +53,13 @@ def best_brightness(scene, when, raw, small, still):
 
 def frames(scene, when, ticks):
     weather = scene.weather_name(when)
-    shown = getattr(scene, 'on_screen', lambda rgb, time: np.asarray(rgb))     # the evening's dimming and warmth
-    if screen_factors(scene, when) is not None:
-        shown = lambda rgb, time: np.asarray(rgb)                               # matched later: best_brightness
-    return weather, scene.choose_state(when, weather), [shown(np.asarray(scene.render(when, weather, t, None, 'stand')), when)
-                                                         for t in ticks]
+    # the frames as drawn; the evening's dimming and warmth are matched later (best_brightness)
+    return weather, scene.choose_state(when, weather), [np.asarray(scene.render(when, weather, t, None, 'stand')) for t in ticks]
 
 
-def main():
-    shot_path = sys.argv[1]
-    when = datetime.strptime(sys.argv[2], '%Y-%m-%d %H:%M:%S')
+def read_screenshot(shot_path):
+    """(the share of 4 x 4 blocks that are one colour, the 480 x 270 art pixels) of a 1920 x 1080 screenshot; also
+    saves the art pixels beside it as NAME-480.png."""
     shot = np.asarray(Image.open(shot_path).convert('RGB'))
     if shot.shape != (1080, 1920, 3):
         raise SystemExit(f'{shot_path}: {shot.shape[1]} x {shot.shape[0]}, not 1920 x 1080')
@@ -72,6 +67,13 @@ def main():
     uniform = (blocks.max(axis=(1, 3)) == blocks.min(axis=(1, 3))).all(axis=2).mean()
     small = shot[2::4, 2::4]
     Image.fromarray(small).save(shot_path[:-4] + '-480.png')
+    return uniform, small
+
+
+def main():
+    shot_path = sys.argv[1]
+    when = datetime.strptime(sys.argv[2], '%Y-%m-%d %H:%M:%S')
+    uniform, small = read_screenshot(shot_path)
     ticks = [1000 + 997 * k for k in range(24)]
     new = load(ROOT, 'scene_now')
     weather, state, now = frames(new, when, ticks)

@@ -22,7 +22,6 @@ The GIFs keep every colour exactly: a frame with more than 256 colours is report
 in hundredths of a second, so its frames alternate 120 and 130 ms: 125 ms a tick on average.
 """
 import argparse
-import json
 import math
 import sys
 from datetime import datetime, timedelta
@@ -80,17 +79,6 @@ def sheet(images, columns, labels=None, gap=4):
         if labels:
             out.paste(label(labels[k], w), (x, y + h))
     return out
-
-
-def change_sheet(name, before, after, box, caption):
-    """out/change_<name>.png: the same crop of two day frames, before and after a change, at x3,
-    side by side, each captioned, with the caption of the change above them."""
-    a, b = (scaled(f.crop(box), 3) for f in (before, after))
-    pair = sheet([a, b], 2, ['before', 'after'])
-    out = Image.new('RGB', (pair.width, pair.height + 13))
-    out.paste(label(caption, pair.width), (0, 0))
-    out.paste(pair, (0, 13))
-    out.save(OUT / f'change_{name}.png')
 
 
 def to_p(img):

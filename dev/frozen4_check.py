@@ -20,7 +20,6 @@ What it cannot see: the dog's shadow, the background behind the dog and the text
 shows the same.
 """
 import hashlib
-import importlib.util
 import json
 import shutil
 import subprocess
@@ -30,6 +29,9 @@ from datetime import datetime
 from pathlib import Path
 
 import numpy as np
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from scene_on_tv import load  # noqa: E402  (a scene module from a folder that holds tools/ and art/)
 
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,22 +48,13 @@ TIMES = [datetime(2026, 1, 15, 0, 38), datetime(2026, 2, 28, 9, 5), datetime(202
          datetime(2026, 11, 9, 13, 0), datetime(2026, 12, 25, 6, 23)]
 
 
-def load(folder, name):
-    spec = importlib.util.spec_from_file_location(name, folder / 'tools' / 'scene.py')
-    module = importlib.util.module_from_spec(spec)
-    sys.path.insert(0, str(folder / 'tools'))
-    spec.loader.exec_module(module)
-    sys.path.pop(0)
-    return module
-
-
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def check(folder):
     bad = []
-    old, new = load(BASE, 'scene_baseline3'), load(folder, 'scene_checked')
+    old, new = load(BASE, 'scene_baseline'), load(folder, 'scene_checked')
     old.quotes = new.quotes                   # the words are not frozen; how they are set is
     # 1. files
     for f in FROZEN_FILES:

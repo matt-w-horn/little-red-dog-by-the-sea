@@ -1,7 +1,7 @@
 """foam.png: the water's edge and the foam behind it. Scalloped lobes at the edge, broken edge foam of varying width,
 and long wavy ribbons of foam that run along the shore behind the edge.
 
-scene_build.py calls layer_foam(roles, beach, sb) in place of its own when this file exists. sb is scene_build.
+scene_build.py calls layer_foam(roles, beach, sb). sb is scene_build.
 
 Units. `d` is beach.dist, the distance from the still waterline in shore units (sea positive, sand negative); one
 unit is `scale` pixels, scale = 0.30 at the horizon (y 100) to 1.0 at y 270, as build_shore measures it. `a` is

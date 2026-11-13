@@ -138,7 +138,7 @@ def clouds():
     say(f'   control, span 400: before {before}, after {after}: reported visible: {need(visible, "cloud control")}')
 
 
-def strip_steps(name, frames, height, state='day'):
+def strip_steps(name, frames, height):
     """Changed pixels between consecutive frames of a strip of full-width frames stacked top to bottom."""
     img = scene.layer(name)
     fr = [img[k * height:(k + 1) * height] for k in range(frames)]

@@ -20,7 +20,7 @@ import scene  # noqa: E402
 SHOTS = [('dawn', datetime(2026, 11, 9, 6, 52), 'clear'), ('day', datetime(2026, 11, 9, 13, 0), 'clear'),
          ('dusk', datetime(2026, 11, 9, 17, 0), 'clear'), ('night', datetime(2026, 11, 24, 23, 0), 'clear'),
          ('cloudy', datetime(2026, 11, 9, 14, 0), 'cloudy'), ('rain', datetime(2026, 11, 9, 8, 23), 'rain')]
-W, H, LABEL, SIDE = 480, 270, 18, 150
+W, H, LABEL, SIDE = scene.W, scene.H, 18, 150
 FONT = ImageFont.load_default(size=14)
 
 

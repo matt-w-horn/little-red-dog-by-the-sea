@@ -37,25 +37,14 @@ from PIL import Image
 
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from scene import beach_hash as jhash, wrap  # noqa: E402  (one port of Beach.hash and PixelFont.wrap, shared)
+from scene import W, H, beach_hash as jhash, wrap  # noqa: E402  (one port of Beach.hash and PixelFont.wrap, shared)
 
 
-def optional(name):
-    """A module beside this file, or None while its file does not exist."""
-    try:
-        return __import__(name)
-    except ModuleNotFoundError as e:
-        if e.name != name:
-            raise
-        return None
-
-
-# The sand's marks are laid by tools/scene_sand.py (layer_sand(roles, beach, sb)). When tools/scene_foam.py exists, its
-# layer_foam(roles, beach, sb) in place of layer_foam below. sb is this module: its tables and helpers.
-scene_sand, scene_foam = optional('scene_sand'), optional('scene_foam')
+import scene_sand    # noqa: E402  (the sand's marks: layer_sand(roles, beach, sb); sb is this module, its tables and helpers)
+import scene_foam    # noqa: E402  (the water's edge, its foam and wave lines: layer_foam(roles, beach, sb))
 import scene_dither  # noqa: E402  (the sky, the sea and the sand: fields baked with Floyd-Steinberg dithering)
 import scene_land    # noqa: E402  (the headland: wood, grass, cliff, houses)
-scene_months = optional('scene_months')      # what each month changes: colours, sun times, weather
+import scene_months  # noqa: E402  (what each month changes: colours, sun times, weather)
 import scene_house   # noqa: E402  (the doghouse at the left edge of the sand)
 import scene_specials  # noqa: E402  (what shows only on some dates: holidays, the December lights, boats, fog)
 
@@ -64,7 +53,7 @@ ART = ADDON / 'art'
 LAYERS = ART / 'layers'
 PALETTES = ART / 'palettes'
 
-W, H, HORIZON = 480, 270, 100
+HORIZON = 100
 STATES = ['dawn', 'day', 'dusk', 'night', 'cloudy', 'rain']
 
 # Beach.java's palette.
@@ -109,14 +98,6 @@ MOON_AT = [404, 68]
 PATH_SUN_X, PATH_MOON_X = 400, 404
 
 TIDE_TICKS, FOAM_FRAMES = 152, 152     # one wave is 152 ticks; a frame for every tick (38 frames, 4 ticks each, looked jerky)
-# Foam behind the edge line: 'lace' (the lines and flecks below) or 'java' (Beach.water's three lines).
-FOAM_STYLE = 'lace'
-# Lines behind the moving edge: e from, e to, role, length of a segment along the shore, share of gaps in percent.
-FOAM_LINES = [(3, 4, 'FOAM', 5, 30), (5, 6.4, 'FOAM', 6, 37), (8.5, 9.5, 'FOAM', 6, 43), (12, 13.2, 'FOAM', 7, 50),
-              (16.5, 17.5, 'FOAM_BACK', 8, 57), (21, 22.1, 'FOAM_BACK', 8, 63), (27, 28, 'FOAM_BACK', 9, 70)]
-FOAM_LINE_SALT = 72        # line k is lit where hash(a // segment, k, 72) % 100 >= gaps
-# Flecks: for e in [1.7, 12) a pixel is FOAM_BACK when hash(a // cell, int(e), salt) % 100 < start - int(e).
-FOAM_FLECKS = dict(e=(1.7, 12), cell=3, salt=71, start=14)
 CLOUDS_SHOWN = {'clear': 2, 'cloudy': 8, 'rain': 10}    # in clear weather the month says how many: scene_months.CLOUDS_CLEAR
 CLOUDS_GROWN = {'clear': False, 'cloudy': True, 'rain': True}
 # Layers drawn at night only when the weather is clear.
@@ -362,15 +343,14 @@ MONTHS = range(1, 13)        # month 0 is the base design, before any month's ch
 def lit(c, state, month, what='land'):
     """A day colour in one lighting state and month: the month's change first (scene_months.tint: what = 'sky', 'sea',
     'sand', 'land', 'leaf', 'grass', 'rock' ...; month 0 changes nothing), then the state's grading."""
-    if scene_months:
-        c = scene_months.tint(c, month, what, state) if month else scene_months.base(c, what)
+    c = scene_months.tint(c, month, what) if month else scene_months.base(c, what)
     return grade(c, state)
 
 
 def sky_tone(k, n, state, month):
     """Sky tone k of n: by day the table scene_dither.SKY_DAY, in the other states the state's stops; then the month."""
     c = scene_dither.tones(scene_dither.SKY_DAY, n)[k] if state == 'day' else sky_colour(state, k / (n - 1))
-    return scene_months.tint(c, month, 'sky', state) if scene_months and month else c
+    return scene_months.tint(c, month, 'sky') if month else c
 
 
 # ------------------------------------------------------------------------------------------- the shapes (Beach.java)
@@ -455,10 +435,6 @@ def foot_at(x):
         if a[0] <= x <= b[0]:
             return jround(f32(a[1]) + f32((b[1] - a[1]) * (x - a[0])) / f32(b[0] - a[0])) + 1
     return H
-
-
-def sq(v):
-    return v * v
 
 
 class Painter:
@@ -592,7 +568,7 @@ def pair_name(prefix, left, right):
 def kind_of(colour):
     """What a land colour is, for the month's change: 'leaf', 'grass', 'rock' or 'land'."""
     name = NAME_OF[colour]
-    if scene_months and name in scene_months.BLOOM:
+    if name in scene_months.BLOOM:
         return name
     return 'leaf' if name.startswith('LEAF_') else 'grass' if name.startswith('GRASS_') else \
         'rock' if name.startswith('ROCK_') else 'land'
@@ -815,74 +791,6 @@ def layer_paths(roles, beach):
             img[mask == m] = i
         out[file] = img
     return out
-
-
-def surge(q):
-    """Beach.surge: 0 while the sea is drawn back, up fast as a wave runs up the sand, then draining."""
-    u1 = q / f32(0.16)
-    u2 = (q - f32(0.16)) / f32(0.46)
-    return np.where(q < f32(0.16), u1 * u1 * (f32(3) - f32(2) * u1),
-                    np.where(q < f32(0.62), f32(1) - u2 * u2 * (f32(3) - f32(2) * u2), f32(0))).astype(f32)
-
-
-def wet(q):
-    """Beach.wet: how far up the sand is still wet."""
-    return np.where(q < f32(0.16), surge(q), np.where(q < f32(0.72), f32(1),
-                                                       f32(1) - (q - f32(0.72)) / f32(0.28))).astype(f32)
-
-
-def layer_foam(roles, beach):
-    """foam.png: the waves, FOAM_FRAMES frames of rows 100..269 stacked top to bottom, spread evenly over one wave of
-    TIDE_TICKS ticks.
-    A port of Beach.water for the strip the waves reach, with the foam lines held still along the shore (no drift)
-    so the strip loops. Pixels the wave leaves alone are transparent."""
-    names = [('WASH', grade, PALE, 'water run up over the sand'), ('FOAM', grade, WHITE, 'foam: the broken edge and the two lines behind it'),
-             ('FOAM_BACK', grade, PALE, 'foam: the fourth, faint line'), ('WET_EDGE', grade, MAUVE, 'dark margin of wet sand right behind the water'),
-             ('WET', grade, WET_SAND, 'wet sand the wave left')]
-    ids = {n: roles.add(n, each_state(lambda s, c=c: fn(c, s)), use) for n, fn, c, use in names}
-    rows = slice(HORIZON, H)
-    water = beach.water[rows]
-    shore = beach.kind[rows] == K_SHORE    # sand the water runs over; dist there is <= 0, sometimes -0.0
-    d = beach.dist[rows]
-    a = beach.along[rows].astype(np.int64)
-    line = [jhash(a // 5, 0, 61) & 7 > 1, jhash(a // 6, 1, 61) & 3 < 2, jhash(a // 7, 2, 61) & 3 == 0,
-            jhash(a // 9, 3, 61) & 3 == 0]
-    strip = np.zeros(((H - HORIZON) * FOAM_FRAMES, W), np.uint8)
-    for f in range(FOAM_FRAMES):
-        tick = f * (TIDE_TICKS // FOAM_FRAMES)
-        q = f32(tick % TIDE_TICKS) / f32(TIDE_TICKS) + a.astype(f32) * f32(0.0016)
-        q = (q - np.floor(q)).astype(f32)
-        reach = (np.floor((f32(3) + f32(10) * surge(q)) * f32(2) + 0.5) / 2).astype(f32)
-        e = d + reach
-        frame = np.zeros(d.shape, np.uint8)
-        sand_side = e < 0
-        frame[sand_side & (-d < f32(3) + f32(10) * wet(q))] = ids['WET']
-        frame[sand_side & (e > f32(-1.6))] = ids['WET_EDGE']
-        frame[~sand_side & shore] = ids['WASH']
-        frame[~sand_side & (e < f32(1.7)) & line[0]] = ids['FOAM']
-        if FOAM_STYLE == 'lace':
-            foam_lace(frame, e, a, ids)
-        else:
-            frame[(e >= 5) & (e < f32(6.4)) & line[1]] = ids['FOAM']
-            frame[(e >= 12) & (e < f32(13.2)) & line[2]] = ids['FOAM']
-            frame[(e >= 21) & (e < f32(22.1)) & line[3]] = ids['FOAM_BACK']
-        frame[~water] = 0
-        strip[f * (H - HORIZON):(f + 1) * (H - HORIZON)] = frame
-    return {'foam.png': strip}
-
-
-def foam_lace(frame, e, a, ids):
-    """The shallows laced with foam behind the edge line (FOAM_STYLE = 'lace'): flecks that thin out with distance
-    from the moving edge, then the broken lines of FOAM_LINES over them. All of it is measured from the edge (e), so
-    it moves with the wave; nothing depends on the tick, so the strip still loops."""
-    lo, hi = FOAM_FLECKS['e']
-    band = (e >= lo) & (e < hi)
-    whole = np.floor(np.where(band, e, 0)).astype(np.int64)
-    fleck = jhash(a // FOAM_FLECKS['cell'], whole, FOAM_FLECKS['salt']) % 100 < FOAM_FLECKS['start'] - whole
-    frame[band & fleck] = ids['FOAM_BACK']
-    for k, (e0, e1, name, segment, gaps) in enumerate(FOAM_LINES):
-        lit = jhash(a // segment, k, FOAM_LINE_SALT) % 100 >= gaps
-        frame[(e >= f32(e0)) & (e < f32(e1)) & lit] = ids[name]
 
 
 def layer_hill(roles, beach):
@@ -1474,7 +1382,7 @@ def main():
     layers.update(layer_sea_fx(roles, beach))
     layers.update(layer_paths(roles, beach))
     baked('sand', *scene_sand.layer_sand(roles, beach, sb))
-    layers.update(scene_foam.layer_foam(roles, beach, sb) if scene_foam else layer_foam(roles, beach))
+    layers.update(scene_foam.layer_foam(roles, beach, sb))
     layers.update(layer_hill(roles, beach))
     layers.update(layer_lighthouse(roles, beach))
     specials_png, specials = scene_specials.layer_specials(roles, sb)
