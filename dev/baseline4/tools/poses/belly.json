@@ -1,0 +1,179 @@
+{
+ "name": "belly",
+ "parts": [
+  {
+   "file": "dog_belly.png",
+   "at": [
+    -30,
+    40
+   ],
+   "ground": 35,
+   "moves": [
+    {
+     "name": "breath",
+     "timetable": {
+      "period": 41,
+      "length": 17
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "shift",
+        "rect": [
+         52,
+         8,
+         31,
+         2
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": "COAT"
+       }
+      ]
+     ]
+    },
+    {
+     "name": "blink",
+     "timetable": {
+      "slot": 31,
+      "length": 2,
+      "spread": 24,
+      "chance": [
+       2,
+       3
+      ],
+      "salt": 291
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "recolour",
+        "cells": [
+         [
+          108,
+          23
+         ],
+         [
+          109,
+          23
+         ]
+        ],
+        "to": "COAT"
+       }
+      ]
+     ]
+    },
+    {
+     "name": "ear",
+     "timetable": {
+      "slot": 89,
+      "length": 6,
+      "spread": 70,
+      "chance": [
+       1,
+       2
+      ],
+      "salt": 293
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "recolour",
+        "cells": [
+         [
+          98,
+          23
+         ],
+         [
+          99,
+          23
+         ],
+         [
+          100,
+          23
+         ],
+         [
+          101,
+          23
+         ]
+        ],
+        "to": "COAT"
+       }
+      ]
+     ]
+    },
+    {
+     "name": "tail",
+     "timetable": {
+      "slot": 463,
+      "length": 10,
+      "spread": 300,
+      "chance": [
+       1,
+       1
+      ],
+      "salt": 295
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "shift",
+        "rect": [
+         2,
+         31,
+         10,
+         4
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [
+       {
+        "op": "shift",
+        "rect": [
+         2,
+         31,
+         10,
+         4
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [
+       {
+        "op": "shift",
+        "rect": [
+         2,
+         31,
+         10,
+         4
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [],
+      []
+     ]
+    }
+   ]
+  },
+  {
+   "file": "ball.png",
+   "at": [
+    91,
+    66
+   ],
+   "ground": "outline"
+  }
+ ]
+}

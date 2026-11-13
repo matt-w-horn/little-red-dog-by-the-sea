@@ -1,0 +1,47 @@
+{
+ "name": "curl",
+ "parts": [
+  {
+   "file": "dog_curl.png",
+   "at": [
+    0,
+    35
+   ],
+   "ground": "outline",
+   "moves": [
+    {
+     "name": "breath",
+     "timetable": {
+      "period": 44,
+      "length": 20
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "shift",
+        "rect": [
+         24,
+         4,
+         28,
+         3
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": "COAT"
+       }
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "file": "towel.png",
+   "at": [
+    -11,
+    62
+   ],
+   "flat": true
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+{
+ "name": "sphinx",
+ "parts": [
+  {
+   "file": "dog_sphinx.png",
+   "at": [
+    -27,
+    0
+   ],
+   "ground": 75,
+   "moves": [
+    {
+     "name": "breath",
+     "timetable": {
+      "slot": 38,
+      "length": 17,
+      "spread": 5,
+      "chance": [
+       1,
+       1
+      ],
+      "salt": 410
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "shift",
+        "rect": [
+         66,
+         46,
+         14,
+         4
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": "COAT"
+       }
+      ]
+     ]
+    },
+    {
+     "name": "blink",
+     "timetable": {
+      "slot": 67,
+      "length": 2,
+      "spread": 22,
+      "chance": [
+       1,
+       1
+      ],
+      "salt": 411
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "recolour",
+        "cells": [
+         [
+          116,
+          31
+         ],
+         [
+          117,
+          31
+         ]
+        ],
+        "to": "COAT"
+       }
+      ]
+     ]
+    },
+    {
+     "name": "ear",
+     "timetable": {
+      "slot": 281,
+      "length": 6,
+      "spread": 40,
+      "chance": [
+       1,
+       1
+      ],
+      "salt": 412
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "recolour",
+        "cells": [
+         [
+          106,
+          31
+         ],
+         [
+          107,
+          31
+         ],
+         [
+          108,
+          31
+         ],
+         [
+          109,
+          31
+         ]
+        ],
+        "to": "COAT"
+       }
+      ]
+     ]
+    },
+    {
+     "name": "tail",
+     "timetable": {
+      "slot": 367,
+      "length": 13,
+      "spread": 100,
+      "chance": [
+       5,
+       6
+      ],
+      "salt": 413
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "shift",
+        "rect": [
+         8,
+         73,
+         10,
+         3
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [
+       {
+        "op": "shift",
+        "rect": [
+         8,
+         73,
+         10,
+         3
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [
+       {
+        "op": "shift",
+        "rect": [
+         8,
+         73,
+         10,
+         3
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       },
+       {
+        "op": "shift",
+        "rect": [
+         8,
+         72,
+         3,
+         3
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [
+       {
+        "op": "shift",
+        "rect": [
+         8,
+         73,
+         10,
+         3
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       },
+       {
+        "op": "shift",
+        "rect": [
+         8,
+         72,
+         3,
+         3
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [
+       {
+        "op": "shift",
+        "rect": [
+         8,
+         73,
+         10,
+         3
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       },
+       {
+        "op": "shift",
+        "rect": [
+         8,
+         72,
+         3,
+         3
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [],
+      [],
+      []
+     ]
+    }
+   ]
+  }
+ ]
+}
