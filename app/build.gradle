@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.application'
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+}
+
+android {
+    namespace 'io.matthorn.littlereddog'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'io.matthorn.littlereddog'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt')
+            // Sideloaded over ADB like the launcher: signed with the debug key.
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // The art folder is the one source for the picture. What the renderer reads is packaged under assets/art;
+    // the reference frames, which only the unit test reads, are not.
+    sourceSets.main.assets.srcDirs += [layout.buildDirectory.dir('art-assets').get().asFile]
+}
+
+// -PartDir=/absolute/path packages and tests that art folder in place of ../art (a build with another quote list).
+def artDir = findProperty('artDir')
+
+tasks.register('syncArt', Sync) {
+    inputs.property('artDir', artDir ?: '')
+    from(artDir ?: '../art') {
+        include 'scene.json', 'LICENSE', 'dog*.png', 'ball.png', 'towel.png', 'quotes.txt', 'layers/**', 'palettes/**'
+    }
+    into layout.buildDirectory.dir('art-assets/art')
+}
+preBuild.dependsOn syncArt
+
+// The unit test reads the art folder and its reference frames, so a change there must run the test again.
+// -PartDir=/absolute/path tests another art folder (the system property art.dir tells the test which).
+tasks.withType(Test).configureEach {
+    if (artDir) {
+        systemProperty 'art.dir', artDir
+        inputs.dir(artDir)
+    } else {
+        inputs.dir('../art')
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The TV banner: a ginger dog on a green meadow under an evening sky. Drawn for this add-on. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp" android:height="180dp"
+    android:viewportWidth="320" android:viewportHeight="180">
+    <path android:fillColor="#FF2B3A6B" android:pathData="M0,0h320v180h-320z" />
+    <path android:fillColor="#FFF6A070" android:pathData="M0,90h320v50h-320z" />
+    <path android:fillColor="#FFFFE9A8" android:pathData="M250,96a22,22 0 1,0 0.1,0z" />
+    <path android:fillColor="#FF5E7399" android:pathData="M0,120l60,-34l50,26l60,-40l70,44l80,-30v94h-320z" />
+    <path android:fillColor="#FF4A9A3D" android:pathData="M0,134h320v46h-320z" />
+    <path android:fillColor="#FFC8743A" android:pathData="M96,96h92l16,-22h34l14,16v14h-22l-10,14v34h-14v-28h-74v28h-14v-36z" />
+    <path android:fillColor="#FF9A5326" android:pathData="M204,74l-10,22h14z" />
+    <path android:fillColor="#FFF2E8DC" android:pathData="M236,90h16v14h-22z" />
+    <path android:fillColor="#FF2F6FD6" android:pathData="M196,98l10,-4l8,20l-10,4z" />
+    <path android:fillColor="#FF2A1C16" android:pathData="M248,90h6v6h-6zM224,80h5v5h-5z" />
+</vector>
