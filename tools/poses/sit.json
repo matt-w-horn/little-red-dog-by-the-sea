@@ -1,0 +1,171 @@
+{
+ "name": "sit",
+ "parts": [
+  {
+   "file": "dog_sit.png",
+   "at": [
+    -8,
+    -20
+   ],
+   "ground": 95,
+   "moves": [
+    {
+     "name": "breath",
+     "timetable": {
+      "period": 37,
+      "length": 15
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "shift",
+        "rect": [
+         90,
+         42,
+         4,
+         9
+        ],
+        "dx": 1,
+        "dy": 0,
+        "fill": "WHITE"
+       }
+      ]
+     ]
+    },
+    {
+     "name": "blink",
+     "timetable": {
+      "slot": 29,
+      "length": 2,
+      "spread": 24,
+      "chance": [
+       2,
+       3
+      ],
+      "salt": 191
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "recolour",
+        "cells": [
+         [
+          99,
+          13
+         ],
+         [
+          100,
+          13
+         ]
+        ],
+        "to": "COAT"
+       }
+      ]
+     ]
+    },
+    {
+     "name": "ear",
+     "timetable": {
+      "slot": 83,
+      "length": 6,
+      "spread": 70,
+      "chance": [
+       1,
+       2
+      ],
+      "salt": 193
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "recolour",
+        "cells": [
+         [
+          89,
+          13
+         ],
+         [
+          90,
+          13
+         ],
+         [
+          91,
+          13
+         ],
+         [
+          92,
+          13
+         ]
+        ],
+        "to": "COAT"
+       }
+      ]
+     ]
+    },
+    {
+     "name": "tail",
+     "timetable": {
+      "slot": 449,
+      "length": 10,
+      "spread": 300,
+      "chance": [
+       1,
+       1
+      ],
+      "salt": 195
+     },
+     "ticks_per_frame": 1,
+     "frames": [
+      [
+       {
+        "op": "shift",
+        "rect": [
+         21,
+         91,
+         11,
+         4
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [
+       {
+        "op": "shift",
+        "rect": [
+         21,
+         91,
+         11,
+         4
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [
+       {
+        "op": "shift",
+        "rect": [
+         21,
+         91,
+         11,
+         4
+        ],
+        "dx": 0,
+        "dy": -1,
+        "fill": null
+       }
+      ],
+      [],
+      []
+     ]
+    }
+   ]
+  }
+ ]
+}
