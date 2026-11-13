@@ -15,8 +15,11 @@ concurrency:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false # nothing here pushes; a pull request's code must not find a token on disk
       - uses: actions/setup-java@77dd5b2ce225ea11469928ac317850245a74ae78 # v6.2.0
         with:
           distribution: temurin
@@ -25,7 +28,7 @@ jobs:
         with:
           python-version: '3.14'
           cache: pip
-      - run: pip install -r requirements.txt
+      - run: pip install --require-hashes -r requirements.txt
 
       # The gate on a staging copy: build and export the art here, the frozen check, the loop test, the quote rule,
       # then the Java renderer against the frames this machine's Python drew.
