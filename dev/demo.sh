@@ -13,7 +13,7 @@ set -euo pipefail
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO"
 . "$REPO/dev/tv.sh"
-tv() { tv_run "$@" 2>&1 | grep -v "Broken pipe" || true; }
+tv() { tv_quiet "$@"; }
 case "${1:?a name, off, or tour}" in
   off) tv "settings delete global littlereddog_demo"; echo "demo off" ;;
   tour)

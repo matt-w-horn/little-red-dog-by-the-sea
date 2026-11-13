@@ -29,6 +29,23 @@ ADDON="$REPO"
 STAGE="$REPO/out/stage"
 cd "$REPO"
 
+# Gradle in the project, with the test results of this run only. Sets gradle_status; gradle_ok stops on a failure.
+export JAVA_HOME="${JAVA_HOME:-/opt/homebrew/opt/openjdk@17}" ANDROID_HOME="${ANDROID_HOME:-/opt/homebrew/share/android-commandlinetools}"
+gradle_run() {
+  rm -rf "$ADDON/app/build/test-results/testReleaseUnitTest"
+  set +e
+  (cd "$ADDON" && ./gradlew --no-daemon -q "$@" 2>&1 | grep -v "SDK XML" | tail -8; exit "${PIPESTATUS[0]}")
+  gradle_status=$?
+  set -e
+}
+gradle_ok() { test "$gradle_status" = 0 || { echo "Gradle failed with status $gradle_status"; exit 1; }; }
+test_counts() {
+  (cd "$ADDON" && grep -o 'tests="[0-9]*" skipped="[0-9]*" failures="[0-9]*" errors="[0-9]*"' app/build/test-results/testReleaseUnitTest/*.xml | sed 's/^/   /')
+}
+quote_check() {      # quote_check TOOLS: a new quote every hour, each pass in its own order
+  python3 -I -B "$REPO/dev/quote_rule.py" "$1" | tail -1 | sed 's/^/   quotes: /' | tee /dev/stderr | grep "RESULT: every check passed" > /dev/null
+}
+
 echo "== 1. staging copy"
 rm -rf "$STAGE"; mkdir -p "$STAGE"
 cp -Rp "$ADDON/tools" "$ADDON/art" "$STAGE/"
@@ -63,20 +80,15 @@ python3 -I dev/frozen4_check.py "$STAGE" | tail -3 | tee /dev/stderr | grep "RES
 
 echo "== 4. loops and pose changes"
 python3 -I dev/loop_test.py --tools "$STAGE/tools" 2>&1 | tail -3 | tee /dev/stderr | grep "RESULT: every check passed" > /dev/null
-python3 -I -B dev/quote_rule.py "$STAGE/tools" | tail -1 | sed 's/^/   quotes: /' | tee /dev/stderr | grep "RESULT: every check passed" > /dev/null
+quote_check "$STAGE/tools"
 
 if [ "${STAGE_ONLY:-}" = 1 ]; then
   echo "== STAGE_ONLY: Java tests on the staging art; the add-on is not changed"
   cd "$ADDON"
-  export JAVA_HOME="${JAVA_HOME:-/opt/homebrew/opt/openjdk@17}" ANDROID_HOME="${ANDROID_HOME:-/opt/homebrew/share/android-commandlinetools}"
-  rm -rf app/build/test-results/testReleaseUnitTest
-  set +e
-  ./gradlew --no-daemon -q testReleaseUnitTest "-PartDir=$STAGE/art" 2>&1 | grep -v "SDK XML" | tail -8
-  gradle_status="${PIPESTATUS[0]}"
-  set -e
-  grep -o 'tests="[0-9]*" skipped="[0-9]*" failures="[0-9]*" errors="[0-9]*"' app/build/test-results/testReleaseUnitTest/*.xml | sed 's/^/   /'
+  gradle_run testReleaseUnitTest "-PartDir=$STAGE/art"
+  test_counts
   rm -rf app/build/test-results/testReleaseUnitTest   # they describe the staging art, not the add-on's
-  test "$gradle_status" = 0 || { echo "Gradle failed with status $gradle_status"; exit 1; }
+  gradle_ok
   echo "REHEARSED at $(date '+%H:%M:%S'). Nothing merged, nothing deployed."
   exit 0
 fi
@@ -90,13 +102,8 @@ echo "   the add-on equals the staging copy; poses: $(ls "$ADDON/tools/poses" | 
 
 echo "== 6. Gradle"
 cd "$ADDON"
-export JAVA_HOME="${JAVA_HOME:-/opt/homebrew/opt/openjdk@17}" ANDROID_HOME="${ANDROID_HOME:-/opt/homebrew/share/android-commandlinetools}"
-rm -rf app/build/test-results/testReleaseUnitTest      # so that Gradle runs the tests again and their result is this run's
-set +e
-./gradlew --no-daemon -q testReleaseUnitTest lintRelease assembleRelease 2>&1 | grep -v "SDK XML" | tail -8
-gradle_status="${PIPESTATUS[0]}"
-set -e
-test "$gradle_status" = 0 || { echo "Gradle failed with status $gradle_status"; exit 1; }
+gradle_run testReleaseUnitTest lintRelease assembleRelease
+gradle_ok
 python3 -I - <<'EOF'
 import glob, hashlib, os, re, sys, time
 bad = False
@@ -124,14 +131,10 @@ if [ -e "$REPO/quotes.private.txt" ]; then
   rm -rf "$PRIV/tools/__pycache__"
   cp "$REPO/quotes.private.txt" "$PRIV/art/quotes.txt"
   (cd "$PRIV" && python3 -I tools/scene_export.py | tail -2)
-  python3 -I -B dev/quote_rule.py "$PRIV/tools" | tail -1 | sed 's/^/   quotes: /' | tee /dev/stderr | grep "RESULT: every check passed" > /dev/null
-  rm -rf app/build/test-results/testReleaseUnitTest
-  set +e
-  ./gradlew --no-daemon -q testReleaseUnitTest assembleRelease "-PartDir=$PRIV/art" 2>&1 | grep -v "SDK XML" | tail -8
-  gradle_status="${PIPESTATUS[0]}"
-  set -e
-  test "$gradle_status" = 0 || { echo "Gradle failed with status $gradle_status"; exit 1; }
-  grep -o 'tests="[0-9]*" skipped="[0-9]*" failures="[0-9]*" errors="[0-9]*"' app/build/test-results/testReleaseUnitTest/*.xml | sed 's/^/   /'
+  quote_check "$PRIV/tools"
+  gradle_run testReleaseUnitTest assembleRelease "-PartDir=$PRIV/art"
+  gradle_ok
+  test_counts
   python3 -I "$REPO/dev/apk_check.py" app/build/outputs/apk/release/app-release.apk "$PRIV/art"
   echo "PRIVATE BUILD: the APK holds $(unzip -p app/build/outputs/apk/release/app-release.apk assets/art/quotes.txt | grep -c .) quotes"
 fi

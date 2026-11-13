@@ -14,7 +14,7 @@ SHOT="$1"
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO"
 . "$REPO/dev/tv.sh"
-tv() { tv_run "$@" 2>&1 | grep -v "Broken pipe" || true; }
+tv() { tv_quiet "$@"; }
 if [ "${CONFIRM_ONLY:-}" != 1 ]; then
   echo "== 1. state of the TV"
   state="$(tv "dumpsys power | grep mWakefulness=")"; echo "$state"
@@ -28,6 +28,6 @@ echo "== 3. screenshot"
 state="$(tv "dumpsys power | grep mWakefulness=; dumpsys window | grep mCurrentFocus")"; echo "$state"
 echo "$state" | grep "DreamActivity" > /dev/null || { echo "The screensaver is not in front. Not confirmed."; exit 1; }
 shot_time="$(date '+%Y-%m-%d %H:%M:%S')"
-tv_screenshot "shots/$SHOT.png" 2>&1 | grep -v "Broken pipe" | tail -1
+tv_shot "shots/$SHOT.png"
 echo "== 4. compare with the Python render ($shot_time)"
 python3 -I dev/scene_on_tv.py "shots/$SHOT.png" "$shot_time"

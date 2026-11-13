@@ -227,13 +227,17 @@ def dog_part(key, title, part, limit):
     area = np.zeros(sprite.shape, bool)
     counts = {m['name']: 0 for m in moves}
     was = {m['name']: False for m in moves}
+    drawn = {}                                         # the part's picture depends only on which frame each move is at
     for t in range(limit):
-        active = [m['name'] for m in moves if scene.move_frame(m, t) is not None]
+        at = tuple(scene.move_frame(m, t) for m in moves)
+        active = [m['name'] for m, k in zip(moves, at) if k is not None]
         for m in moves:
             on = m['name'] in active
             counts[m['name']] += on and not was[m['name']]
             was[m['name']] = on
-        cur = scene.dog_frame(sprite, t, moves)
+        cur = drawn.get(at)
+        if cur is None:
+            cur = drawn[at] = scene.dog_frame(sprite, t, moves)
         if not active and not np.array_equal(cur, sprite):
             still_ok = False
         changed = cur != prev

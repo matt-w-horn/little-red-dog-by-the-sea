@@ -9,6 +9,7 @@
 #   tv CMD...          run a shell command on the TV and print its output
 #   tv_install APK     install the APK
 #   tv_screenshot FILE save a screenshot as a PNG
+#   tv_quiet CMD...    tv without the client's noise, for reading an answer; tv_shot FILE likewise for a screenshot
 
 _TV_ENV="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/local.env"
 if [ -f "$_TV_ENV" ]; then
@@ -43,3 +44,6 @@ else
   tv_screenshot() { adb -s "$_TV_TARGET" exec-out screencap -p > "$1" && echo "saved $1"; }
 fi
 tv() { tv_run "$@"; }
+# The same for a script that only reads the answer: without the client's "Broken pipe" noise, and never failing.
+tv_quiet() { tv_run "$@" 2>&1 | grep -v "Broken pipe" || true; }
+tv_shot() { tv_screenshot "$1" 2>&1 | grep -v "Broken pipe" | tail -1; }

@@ -990,9 +990,10 @@ def indexes(time, weather, frame_number, state=None, skip=(), pose=None):
     return pose_indexes(time, weather, frame_number, state, skip, chosen_poses(pose, frame_number, time)[1])
 
 
-def pose_indexes(time, weather, frame_number, state, skip, pose):
+def pose_indexes(time, weather, frame_number, state, skip, pose, under=None):
     """indexes with the pose already loaded (None: no dog). At dog_shadow the flat parts are stamped, then every other
-    part casts its shadow; at dog every other part is stamped; in the order of the pose's parts."""
+    part casts its shadow; at dog every other part is stamped; in the order of the pose's parts. under, a list, gets
+    a copy of the frame as it is just before the text is stamped (the text is the last layer)."""
     state = state or choose_state(time, weather)
     rgb, shown = frame_colours(state, frame_number, time, skip)
     parts = pose['parts'] if pose else []
@@ -1002,6 +1003,8 @@ def pose_indexes(time, weather, frame_number, state, skip, pose):
     for name in scene()['order']:
         if name in skip:
             continue
+        if name == 'text' and under is not None:
+            under.append(idx.copy())
         if name == 'dog_shadow':
             if parts:
                 for p, f in zip(parts, frames):
@@ -1044,11 +1047,13 @@ def coloured(time, weather, frame_number, state, skip, pose):
     """One pose's frame as RGB. In a state whose text is not solid (text.opacity, percent) every pixel that the clock
     and the words changed is mixed with what lies under it: (text * opacity + under * (100 - opacity) + 50) // 100
     for each channel."""
-    idx, rgb, state = pose_indexes(time, weather, frame_number, state, skip, pose)
+    assert scene()['order'][-1] == 'text'              # so the frame before the text is the frame without it
+    before = []
+    idx, rgb, state = pose_indexes(time, weather, frame_number, state, skip, pose, before)
     out = rgb[idx]
     opacity = scene()['text']['opacity'][state]
     if opacity < 100 and 'text' not in skip:
-        under, _, _ = pose_indexes(time, weather, frame_number, state, tuple(skip) + ('text',), pose)
+        under = before[0]
         m = idx != under
         out[m] = (out[m].astype(np.int32) * opacity + rgb[under][m].astype(np.int32) * (100 - opacity) + 50) // 100
     return out
