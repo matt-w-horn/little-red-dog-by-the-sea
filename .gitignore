@@ -1,0 +1,9 @@
+.gradle/
+build/
+app/build/
+local.properties
+__pycache__/
+.DS_Store
+out/
+shots/
+dev/local.env
