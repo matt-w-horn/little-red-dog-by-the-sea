@@ -1,0 +1,2984 @@
+[
+ {
+  "file": "state_dawn.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:52:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "dawn"
+  ],
+  "sha256": "96c61c5d6187dfc3ef0de521c902c3a4b28d13a6fa12b0f157ac32ebf17be435"
+ },
+ {
+  "file": "state_day.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "2f8fc08b621fa62a1bfe11ff6ef17329aae3069f1b05583c5617df55bffe3d75"
+ },
+ {
+  "file": "state_dusk.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "dusk"
+  ],
+  "sha256": "8c130ba7308642d785c0713238d22a765d77b030f990846889d45dbe5614d0c9"
+ },
+ {
+  "file": "state_night.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "50892bf2385bb2a8698176c1e0fda400074742dd490a99e08d85212c730b3840"
+ },
+ {
+  "file": "state_cloudy.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "9b8c99889bd01a18e4c3efd570be03de90fa61d9e33f94879ad53fdbdc171c38"
+ },
+ {
+  "file": "state_rain.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "330a93baf15dd5453e93390ae7e2742c4b54b2fbfcfe0d797d70f77aaf620e67"
+ },
+ {
+  "file": "state_dawn_big_tick.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:52:00.000000",
+  "weather": "clear",
+  "frame_number": 14000000020,
+  "state": "dawn",
+  "pose": "stand",
+  "drawn_state": "dawn",
+  "sha256": "c8d3f52f5777604d514beed6be5daa49bdd3647a26a7a49e4d00672fc4627af1"
+ },
+ {
+  "file": "state_day_big_tick.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 14000000020,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "5d38ef759814ef88fb26ab9849e16bbad1a890c04625fb3109bc49d802e0a695"
+ },
+ {
+  "file": "state_dusk_big_tick.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 14000000020,
+  "state": "dusk",
+  "pose": "stand",
+  "drawn_state": "dusk",
+  "sha256": "b1243d66f89f89993158f0a2654ec33f40ec1eb46fdb25086fe219843558def4"
+ },
+ {
+  "file": "state_night_big_tick.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 14000000020,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "4dcd74225d342de8cbd41a3699f644c8e64b698ed45f798652bf8bc18c60115c"
+ },
+ {
+  "file": "state_cloudy_big_tick.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 14000000020,
+  "state": "cloudy",
+  "pose": "stand",
+  "drawn_state": "cloudy",
+  "sha256": "58f27c1d861b6fd7e96545fabc9aeea21766d1454f9543c774e5522f5c00fb0e"
+ },
+ {
+  "file": "state_rain_big_tick.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 14000000020,
+  "state": "rain",
+  "pose": "stand",
+  "drawn_state": "rain",
+  "sha256": "f86d70558a57380b27e3c9bc535860709eac446c5c7dcdb255f77590e4cdea49"
+ },
+ {
+  "file": "house_door_dawn.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:52:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "door",
+  "drawn_state": [
+   "dawn"
+  ],
+  "sha256": "5d85a9645387d9284bd3cf7e95fda1f52188bb6aac15c75eccc1ef283a0d3b88"
+ },
+ {
+  "file": "house_door_day.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "door",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "cf8bc5e310985519021642e2b8de4211dfc96edf068b12bc6f5d5a2cacabb3c3"
+ },
+ {
+  "file": "house_door_dusk.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "door",
+  "drawn_state": [
+   "dusk"
+  ],
+  "sha256": "24dae90819ca5c0401778b54b4c87e8b8dde582b30b725fc0ce0b6c054cb6191"
+ },
+ {
+  "file": "house_door_night.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "door",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "1add07cdd863912436d726c33d64e14eff1f7dc0c8c8d69c27bdf4bc690fc312"
+ },
+ {
+  "file": "house_door_cloudy.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 20,
+  "state": null,
+  "pose": "door",
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "bd354d908cfb2c63cbb90fc8befe22a51ec818f5a71cf03bb822b41a7f263200"
+ },
+ {
+  "file": "house_door_rain.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 20,
+  "state": null,
+  "pose": "door",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "d947756733299b3a2c5ffc6b0408a8fa69e798fd25e69b63209c6ca5e6e7e789"
+ },
+ {
+  "file": "waves_tick000.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 0,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "b49b4e8105fdd447bf4c65d10ed07fe0d4a4241dfc3bccc04a6c844fcc9e72d5"
+ },
+ {
+  "file": "waves_tick004.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 4,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "ae1f65fe51075b400bed104820620a19c39a8635c3b88e5532184e22e46bf5c7"
+ },
+ {
+  "file": "waves_tick008.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 8,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "6ad1cd7965e4457971501cdca515548a5b4b9697ed194a3adf150dc245ff24cc"
+ },
+ {
+  "file": "waves_tick012.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 12,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "783c9314590832b08196b36031444d7e903cefdbd9f3a908f77e63ed03f8800b"
+ },
+ {
+  "file": "waves_tick016.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 16,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "27329ca511678fa89954a5301464d0f037f260cbd6dc5a175d17102a23ed11ed"
+ },
+ {
+  "file": "waves_tick020.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "2f8fc08b621fa62a1bfe11ff6ef17329aae3069f1b05583c5617df55bffe3d75"
+ },
+ {
+  "file": "waves_tick024.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 24,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "11580709a86143319546fc43123995ecadbc4d09109c2c32a0238ed71308c37b"
+ },
+ {
+  "file": "waves_tick028.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 28,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "b2bd23904d183a8b73d057f9d8ea4205f2a795282e2566dc8c466203e40bda8b"
+ },
+ {
+  "file": "dog_breath_alone_tick0.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 0,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "b49b4e8105fdd447bf4c65d10ed07fe0d4a4241dfc3bccc04a6c844fcc9e72d5"
+ },
+ {
+  "file": "dog_blink_alone_tick67.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 67,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "cc6625f03319fe31dc30173127bdd44eadd39298bf875c4320951f6518561eca"
+ },
+ {
+  "file": "dog_ear_alone_tick315.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 315,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "87e59ff4e838526981e30b6b0bee1aaa79ac8864e368494b21830239895fb12e"
+ },
+ {
+  "file": "dog_tail_alone_tick15.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 15,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "4cea9bbf708842cb80ca4b056623adbcd4225a7975739a676ea05618916f7818"
+ },
+ {
+  "file": "beam_tick00.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 0,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "e27b9932bb4aac620e06a518bb3a33f41bf78299e32258aa6a387dbb48047a21"
+ },
+ {
+  "file": "beam_tick03.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 3,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "8a18fd8e3d1ac95827d7e5a86de7ac3a1f2c553a747b3c3c35b3b4632e2606f2"
+ },
+ {
+  "file": "beam_tick04.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 4,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "cea1f773977df06da07dc031cd69f4184a511dafcb661a40fd1b03f6ed51e6af"
+ },
+ {
+  "file": "beam_tick08.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 8,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "1ee0f95eccc8b3c53ed9bfae478ca54e9a84a13245657b382b9763c566e4d91f"
+ },
+ {
+  "file": "beam_tick13.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 13,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "5f288910d61bb908a91f6f89976046d31f61de1343a59991ef96de58a93c34dd"
+ },
+ {
+  "file": "beam_tick61.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 61,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "a995a1363593c9eb8353023266586ffbab783fa202814d907faa21f762d5f2b9"
+ },
+ {
+  "file": "rain_tick40.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 40,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "47a7c838726df28b1f8ef00d781d8e0d578425f5f1cb553f3399073d4caf79c4"
+ },
+ {
+  "file": "rain_tick41.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 41,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "eba932eb0c2dc7032f12e721f08e1c3333d3a0b6d9e6785a17ad05aadad42de9"
+ },
+ {
+  "file": "twinkle_tick9.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 9,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "05928ed95ca9a8f49ffd191bef50662adae8833a093b65e18e5bb9d1a7c49128"
+ },
+ {
+  "file": "twinkle_tick21.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 21,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "9e69c60a284909ee1d6e4ea3385d18d9e02f7923a76361407711722e311262b0"
+ },
+ {
+  "file": "twinkle_tick33.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 33,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "e4752f8397b2cdc932c9f61ac16abb7d87050b816e9bff34c034445e48d441c4"
+ },
+ {
+  "file": "twinkle_tick14000000011.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 14000000011,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "39c32adb432f89e365ada6d39994640c9c8159c9a49bdccee3aa7ecdb85cb99f"
+ },
+ {
+  "file": "light_night_dawn_2s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:12:02.000000",
+  "weather": "clear",
+  "frame_number": 1016,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "e04338df69b2b049feddb099b55ed17f7f5439f0f9b05016f11a9aca9188a4ea"
+ },
+ {
+  "file": "light_night_dawn_150s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:14:30.000000",
+  "weather": "clear",
+  "frame_number": 2200,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "ef5c81098c8d65472459f443be7fe06eb78a69712e44c9abf6d04fa540682cec"
+ },
+ {
+  "file": "light_night_dawn_299s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:16:59.000000",
+  "weather": "clear",
+  "frame_number": 3392,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "a371b4e132f8f3877d0aa7c0d63697485bebd3dc1e3f9463a7671e670c3b9670"
+ },
+ {
+  "file": "light_dawn_day_2s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "07:44:02.000000",
+  "weather": "clear",
+  "frame_number": 1016,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "538e013e83deac29b07bf24ff1731b30dfc6e553942d946dd049ed3d48667285"
+ },
+ {
+  "file": "light_dawn_day_150s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "07:46:30.000000",
+  "weather": "clear",
+  "frame_number": 2200,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "9add7c8644ace2c59a77f251a2975308b0be09c892c2e15551de82cf0c29c3af"
+ },
+ {
+  "file": "light_dawn_day_299s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "07:48:59.000000",
+  "weather": "clear",
+  "frame_number": 3392,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "99281b11afdee371633b20d142a5b66ab82c8db4270d94d4fe9676157248d147"
+ },
+ {
+  "file": "light_day_dusk_2s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "16:01:02.000000",
+  "weather": "clear",
+  "frame_number": 1016,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "2f0e7738bc3f322a84e4776065b98af60e8194352655638dcfdbf15fcf30d381"
+ },
+ {
+  "file": "light_day_dusk_150s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "16:03:30.000000",
+  "weather": "clear",
+  "frame_number": 2200,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "944d97e3bd89347ec0cab001c85c6657dc329bf15ab520a1cd6f3a044e2c8cbc"
+ },
+ {
+  "file": "light_day_dusk_299s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "16:05:59.000000",
+  "weather": "clear",
+  "frame_number": 3392,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "3a8ca339e07320c302f32969ed7e7f49a28fbafe0f205d0acdbf16f8340c35c2"
+ },
+ {
+  "file": "light_dusk_night_2s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:33:02.000000",
+  "weather": "clear",
+  "frame_number": 1016,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "54ec8e31829a878f6a9b2804f5de3a42a77d167a60bd77c2b58ece1eae54c3e7"
+ },
+ {
+  "file": "light_dusk_night_150s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:35:30.000000",
+  "weather": "clear",
+  "frame_number": 2200,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "c18f7c97a4a83bbf91efbc42ca89eac83be3802d5ef888f5be4a1e0fdaf86f80"
+ },
+ {
+  "file": "light_dusk_night_299s.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:37:59.000000",
+  "weather": "clear",
+  "frame_number": 3392,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "c801b9e0ee8db1869552a9441b4fa571a29452a6fbc2f7f758facb63035fc8c8"
+ },
+ {
+  "file": "fade_clear_rain_step12.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": [
+   "clear",
+   "rain",
+   12
+  ],
+  "frame_number": 1024,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day",
+   "rain"
+  ],
+  "sha256": "276f75c618e9cff13f53273eb1e69e84f50abcc52e0add02bc1105d94a94e565"
+ },
+ {
+  "file": "moon_full_clear.png",
+  "via": "render",
+  "date": "2026-11-24",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "aefa121e679a380232be0c28521d5c85a640f5d729757af21c65ec7d8adb4eae"
+ },
+ {
+  "file": "moon_full_rain.png",
+  "via": "render",
+  "date": "2026-11-24",
+  "time": "23:00:00.000000",
+  "weather": "rain",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "f93ea37b68314cb419fe08ce163201ae468082388ffda8a23bba8aa0835a1314"
+ },
+ {
+  "file": "moon_full_cloudy.png",
+  "via": "render",
+  "date": "2026-11-24",
+  "time": "23:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "eff9fac4a73d7117e52f6d88b4599ec7cdd3984f2934e27b58ee8b95ee6cbe34"
+ },
+ {
+  "file": "leap_day_noon.png",
+  "via": "render",
+  "date": "2028-02-29",
+  "time": "12:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "bbc55729b24869b3d48f3afd7f29630b9974996452d2f6572f4b0ce77c81b8e2"
+ },
+ {
+  "file": "quote_four_lines.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "709f0ceb3a0f9594af48d35b52b83bd9a9980ff72a43c1b32f968e607dd7b19b"
+ },
+ {
+  "file": "clock_0005.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "00:05:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "4f39fbdc3c9626cbefc42029aa8c2d9ba3093f3ec1dd4a629634f853451670f7"
+ },
+ {
+  "file": "clock_1230.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "12:30:00.000000",
+  "weather": "clear",
+  "frame_number": 3,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "4ebe76a8462224c41c236083101aacd78d75b71f72a73b52fe3229817ba7fd0d"
+ },
+ {
+  "file": "clock_1010.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "10:10:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "c8281196b928ba9075d1df4d9a6edee09455ec360ad9d441a117979ba6376156"
+ },
+ {
+  "file": "clock_2359.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:59:00.000000",
+  "weather": "clear",
+  "frame_number": 3,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "ed2ffd7dcae30c3f8363da22819d8bfacd355632955cc09959327dcd4126f63c"
+ },
+ {
+  "file": "now_new_year.png",
+  "via": "render_now",
+  "date": "2027-01-01",
+  "time": "00:00:03.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1798790403000,
+  "derived_weather": "clear",
+  "derived_tick": 14390323224,
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "ccce25a42e882c16650c72c7bc759fcebdba5cfc4200e0bbf244737c8de54bd6"
+ },
+ {
+  "file": "now_clear_day.png",
+  "via": "render_now",
+  "date": "2026-11-01",
+  "time": "13:00:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1793566800000,
+  "derived_weather": "clear",
+  "derived_tick": 14348534400,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "5c5a8cd0b1329db6494e94ac6f2621bbe56c1cfd8b8cea7855a42e6d74ee18f8"
+ },
+ {
+  "file": "now_shower.png",
+  "via": "render_now",
+  "date": "2026-11-03",
+  "time": "12:07:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1793736420000,
+  "derived_weather": "rain",
+  "derived_tick": 14349891360,
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "25b0b0e764843c8d002b873d8a89865e1c73896493665a23bd58c753e9027d7a"
+ },
+ {
+  "file": "now_night.png",
+  "via": "render_now",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1794294000000,
+  "derived_weather": "clear",
+  "derived_tick": 14354352000,
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "249fb6997587f6c56b4037850d1438f5778faecf10d59a0199243ad20f1e2613"
+ },
+ {
+  "file": "now_shower_fade_in.png",
+  "via": "render_now",
+  "date": "2026-11-03",
+  "time": "11:37:03.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1793734623000,
+  "derived_weather": [
+   "cloudy",
+   "rain",
+   12
+  ],
+  "derived_tick": 14349876984,
+  "drawn_state": [
+   "cloudy",
+   "rain"
+  ],
+  "sha256": "31f8dec28f389457bae2fc069cfcbe4b76eaf913e70dd36f1de6323a556302ba"
+ },
+ {
+  "file": "pose_stand_dawn.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:52:00.000000",
+  "weather": "clear",
+  "frame_number": 52,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "dawn"
+  ],
+  "sha256": "1a3e90b8259f5b63cbfd1131981e0a829e8e5f0c9cf61544d9f85da7c631db37"
+ },
+ {
+  "file": "pose_stand_day.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 52,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "64dc70605418689df4c36c14b34d2d7692ab2fc98a2b09587dacd226349c94c9"
+ },
+ {
+  "file": "pose_stand_dusk.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 52,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "dusk"
+  ],
+  "sha256": "a19cb22d0fcfdb68ab4fd5cf0d440acecd7c7683bf9ad619a9b872c326cd136f"
+ },
+ {
+  "file": "pose_stand_night.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 52,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "17cb716300a8070658982b398c1efd50799d26524c9e7011490a3eed6303ba09"
+ },
+ {
+  "file": "pose_stand_cloudy.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 52,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "842f6a5b2bf28f86a8b7ca229c74cc2ea02e66ebb2840c844426260aad89270a"
+ },
+ {
+  "file": "pose_stand_rain.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 52,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "474ea8ac2c6c853586ae6be42427dd79bc9135e59ba72579ed0cbcd6751451d3"
+ },
+ {
+  "file": "pose_stand_breath_alone_tick0.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 0,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "b49b4e8105fdd447bf4c65d10ed07fe0d4a4241dfc3bccc04a6c844fcc9e72d5"
+ },
+ {
+  "file": "pose_stand_blink_alone_tick67.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 67,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "cc6625f03319fe31dc30173127bdd44eadd39298bf875c4320951f6518561eca"
+ },
+ {
+  "file": "pose_stand_ear_alone_tick315.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 315,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "87e59ff4e838526981e30b6b0bee1aaa79ac8864e368494b21830239895fb12e"
+ },
+ {
+  "file": "pose_stand_tail_alone_tick15.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 15,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "4cea9bbf708842cb80ca4b056623adbcd4225a7975739a676ea05618916f7818"
+ },
+ {
+  "file": "pose_sit_dawn.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:52:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "dawn"
+  ],
+  "sha256": "5e3390c0a0e35ddd5ea376807e3b292ed78e1a0e8e04135b0a29df6f8f87231f"
+ },
+ {
+  "file": "pose_sit_day.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "15d072aa2a3c528a6f0b25fc6054034fd217d732a7430ea8e3c7f3a779d10cdc"
+ },
+ {
+  "file": "pose_sit_dusk.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "dusk"
+  ],
+  "sha256": "4ec56fa5a8c55dc81f237ac6f2cb5810fea212a236c6053e74eb273b72390a64"
+ },
+ {
+  "file": "pose_sit_night.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "71a968ee92a17546e7a8f8db0456a87ce0992ca89ce6ec0eda715d760c298d14"
+ },
+ {
+  "file": "pose_sit_cloudy.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 20,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "1a86eda201304f7cd9f41d616dd76b25ccfa0cff384fc7a3974a8bfa022e0118"
+ },
+ {
+  "file": "pose_sit_rain.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 20,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "a4922739ac1959b77ad7e0de84ad801b5ac9b4fe7ee80912b85537f485a37194"
+ },
+ {
+  "file": "pose_sit_breath_alone_tick0.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 0,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "4edfb9d841edb4b5be302bbbc86cb11e6f35e4d45eb8f888f30bc0bca655cbe1"
+ },
+ {
+  "file": "pose_sit_blink_alone_tick59.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 59,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "aae2795a2d25652e94d74cc0f73dc24aba63681fdf2b2383014a7f6fc380ad25"
+ },
+ {
+  "file": "pose_sit_ear_alone_tick137.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 137,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "14de9f917ced2a081403c0fdb15237175c3fc05a942169c481b68f9d0ba5e4d2"
+ },
+ {
+  "file": "pose_sit_tail_alone_tick738.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 738,
+  "state": null,
+  "pose": "sit",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "71e555207ffde2efae8565913fe8532cc80f406da4b0d8e65f34e0a5ac2fef05"
+ },
+ {
+  "file": "pose_sphinx_dawn.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:52:00.000000",
+  "weather": "clear",
+  "frame_number": 24,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "dawn"
+  ],
+  "sha256": "005b8e808fd476037055d15315df5a11455137ae3c310be4f0b50c7d5994056d"
+ },
+ {
+  "file": "pose_sphinx_day.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 24,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "656b46bc777f5d06a73b9c38a437e587bd35578f3be4203c60f22be5788382bc"
+ },
+ {
+  "file": "pose_sphinx_dusk.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 24,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "dusk"
+  ],
+  "sha256": "30da43417b580776ce75abfa2182d03ebea558f19a1d91d8707ef50dea5dc137"
+ },
+ {
+  "file": "pose_sphinx_night.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 24,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "a990c53c9bd1558843ecd8c5f780f9a8be33bbb44e4be87ee7fe14d0f2c6e084"
+ },
+ {
+  "file": "pose_sphinx_cloudy.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 24,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "0dda87db6d3a496130e6439e8659117ec7e148d349aca28fc92ee80b0334e5a6"
+ },
+ {
+  "file": "pose_sphinx_rain.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 24,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "c7ab4df835b3d4487dbb8a9a8eac55819bc9d8046c0d9ccda0b705b85d54d7df"
+ },
+ {
+  "file": "pose_sphinx_breath_alone_tick2.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 2,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "3809da52064b13cb41a1237ce004e33b5dd67aab18548d1bb6da58493bfde80d"
+ },
+ {
+  "file": "pose_sphinx_blink_alone_tick135.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 135,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "e0c8b47f734d7673a841700c619d697665ee9650c7a56a457edb5947db51bcc1"
+ },
+ {
+  "file": "pose_sphinx_ear_alone_tick20.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "538b6780d34179c69c93d91725b270edefa46afe082b052600dc1e36470bd335"
+ },
+ {
+  "file": "pose_sphinx_tail_alone_tick1196.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 1196,
+  "state": null,
+  "pose": "sphinx",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "2536f4385c513dd4efc80a41565217b7b85dffe2d7e72b8bc2a009f13eda0985"
+ },
+ {
+  "file": "pose_belly_dawn.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:52:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "dawn"
+  ],
+  "sha256": "3b23aadf5f5016346ec67a62bb3f48a54616c70f6e6532fdf416b20be072aec6"
+ },
+ {
+  "file": "pose_belly_day.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "3df690d1054aea1ef91f6eb21bbbcddd5c348d3aaf0ea93584bf38c3750ebe92"
+ },
+ {
+  "file": "pose_belly_dusk.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "dusk"
+  ],
+  "sha256": "7ab987d933767ed666026f4efc966c36d7fd4ec08455f3bacff8aa6f6e0693c5"
+ },
+ {
+  "file": "pose_belly_night.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "0f08e91ab597ef542e55244ccecb3ecc08220ab3f563de08b15faf15a893c594"
+ },
+ {
+  "file": "pose_belly_cloudy.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 20,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "1b08471750490a76d3bfc68559ad6eeb3ec7d65053297fd6ff857423ff768a36"
+ },
+ {
+  "file": "pose_belly_rain.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 20,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "31ec77a802cea20ea045aff441d5a1781fe05b2fb4029b3a26ffa3c72dd85361"
+ },
+ {
+  "file": "pose_belly_breath_alone_tick0.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 0,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "129585881e954846ca11b73572dbebd9d5714fcb4a4d0390c8072155600e6163"
+ },
+ {
+  "file": "pose_belly_blink_alone_tick23.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 23,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "463c3cde8828cc3d6df0166e7bd24081574767f1f347b1c685ef5eb4a76a2de8"
+ },
+ {
+  "file": "pose_belly_ear_alone_tick360.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 360,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "ec21cd10000c3f85f538240147c99b9e6a74588859223dffc64c5937fd966ae6"
+ },
+ {
+  "file": "pose_belly_tail_alone_tick714.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 714,
+  "state": null,
+  "pose": "belly",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "300ffc1f207d31e3f80592b9baecc0177647272e4c1303edf866d569ededebb0"
+ },
+ {
+  "file": "pose_side_dawn.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:52:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "dawn"
+  ],
+  "sha256": "0868186d4d3f7f5fa4cc77b26d29902e365d9d3e346df606cd4ee6f5663df19e"
+ },
+ {
+  "file": "pose_side_day.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "c8683a70bdc183a0520cce2239989b9830274fe2f7015617ef7c511a68a99a38"
+ },
+ {
+  "file": "pose_side_dusk.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "dusk"
+  ],
+  "sha256": "7cc68cdc2d1e8efc599958f94d111b7ecdd6881cf4b32424b630d31b707ccd60"
+ },
+ {
+  "file": "pose_side_night.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "810d2c5eba641f23bc2d57412a34af28d612cce60540b3a1b6d33042c8a2d36b"
+ },
+ {
+  "file": "pose_side_cloudy.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 20,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "e7189fa137859dd2a594796f5c64cb20db33f7d4355c0c51df233f05fd738881"
+ },
+ {
+  "file": "pose_side_rain.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 20,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "9ebe252507e495cbb247c04544689043f43f01128d8e3d4dcb9bc0c706e88982"
+ },
+ {
+  "file": "pose_side_tail_alone_tick714.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 714,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "e06306639e965e8670d6b475e52b9c3bfe5e5085cdbb504ecdc4fa6f6c3b5c67"
+ },
+ {
+  "file": "pose_side_breath_alone_tick0.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 0,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "cf3a2a68458036c569561aedce67777bd8a944767182b07107597040762be4b9"
+ },
+ {
+  "file": "pose_side_blink_alone_tick23.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 23,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "d898d17169516eae4247fabe43248185657caedc5090acbaafed8248cf2a7b1e"
+ },
+ {
+  "file": "pose_side_ear_alone_tick360.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 360,
+  "state": null,
+  "pose": "side",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "fbb70ae7334e4ab27030cf23963e87914f32fe549803cd1dde5300129a94ad04"
+ },
+ {
+  "file": "pose_curl_dawn.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "06:52:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "curl",
+  "drawn_state": [
+   "dawn"
+  ],
+  "sha256": "38bd4c899109ad5d055d52b5a463835f0d4e7bb6e817aca97a03e17cf66c1691"
+ },
+ {
+  "file": "pose_curl_day.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "curl",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "b2225dd5eaeb68882aba85edaf1e36082cd622953f1378cc8a61b820026942bf"
+ },
+ {
+  "file": "pose_curl_dusk.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "curl",
+  "drawn_state": [
+   "dusk"
+  ],
+  "sha256": "90f6f8ae559a00f5f75c24a35b6400b9d59192b4aa499c542aa39307f418012e"
+ },
+ {
+  "file": "pose_curl_night.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "23:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "curl",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "8c0fa380e3d1ea8eac2b998d61ab48cc01bcc90803c0cee96a238ff93649381d"
+ },
+ {
+  "file": "pose_curl_cloudy.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 20,
+  "state": null,
+  "pose": "curl",
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "6e58c50c9d7dd4d35316d3fc3a327db342179819c61f8069b56b3e7f9b7164a5"
+ },
+ {
+  "file": "pose_curl_rain.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "08:23:00.000000",
+  "weather": "rain",
+  "frame_number": 20,
+  "state": null,
+  "pose": "curl",
+  "drawn_state": [
+   "rain"
+  ],
+  "sha256": "0d3fb133c5e3aaf10f622df282abf03f05802d2a0f6340d27fd31cdd3e70e598"
+ },
+ {
+  "file": "pose_curl_breath_alone_tick0.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 0,
+  "state": null,
+  "pose": "curl",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "e4586ccd1c30f19d668df30b7e34ae5c83c948e878d79043f039688396a7684b"
+ },
+ {
+  "file": "pose_fade_step2.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 2729,
+  "state": null,
+  "pose": null,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "c110d4069d571f63c8d9988c5f0a7038b1554cfd4615abe5775ae50779d3fb47"
+ },
+ {
+  "file": "pose_fade_step16.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 2736,
+  "state": null,
+  "pose": null,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "444fb3d190f55de7dcb6ffe88a4e615a6b38045c9d1b641ca89ba6c1a6bb12c1"
+ },
+ {
+  "file": "pose_fade_step30.png",
+  "via": "render",
+  "date": "2026-11-09",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 2743,
+  "state": null,
+  "pose": null,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "7a28d1497d4bf6c80f932ff43f01612f6501c5a3ddb174f79482e2e07bbe0be5"
+ },
+ {
+  "file": "month_01_noon.png",
+  "via": "render_now",
+  "date": "2026-01-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1768509000000,
+  "derived_weather": "cloudy",
+  "derived_tick": 14148072000,
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "4e880c8e16f224785c5d10409e80e81169aa052089c333eef1839d0b8758984e"
+ },
+ {
+  "file": "month_02_noon.png",
+  "via": "render_now",
+  "date": "2026-02-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1771187400000,
+  "derived_weather": "clear",
+  "derived_tick": 14169499200,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "17b2eefb423398f5ecbcda76eb7fa7a69700c454d1c1c31ef2a4deecf50f5348"
+ },
+ {
+  "file": "month_03_noon.png",
+  "via": "render_now",
+  "date": "2026-03-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1773603000000,
+  "derived_weather": "cloudy",
+  "derived_tick": 14188824000,
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "939a865274b0cdbbf9f4fac24d1f15fad2ae9e177967ec406b6a9723311fcdf8"
+ },
+ {
+  "file": "month_04_noon.png",
+  "via": "render_now",
+  "date": "2026-04-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1776281400000,
+  "derived_weather": "clear",
+  "derived_tick": 14210251200,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "bdba7be52b10dd6b5c2ed4fbebf739bc7f132b0f9157d238b6fc1140776b1ca2"
+ },
+ {
+  "file": "month_05_noon.png",
+  "via": "render_now",
+  "date": "2026-05-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1778873400000,
+  "derived_weather": "cloudy",
+  "derived_tick": 14230987200,
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "3c572ad39256367ba39f0e3981f5bfdaba259d270e0be426a24511bb1664a0dc"
+ },
+ {
+  "file": "month_06_noon.png",
+  "via": "render_now",
+  "date": "2026-06-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1781551800000,
+  "derived_weather": "clear",
+  "derived_tick": 14252414400,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "f6dd5cbd83e80d288ec7f732fd33d38e2b503398a50b9f0c488fb18b9d1e8e6d"
+ },
+ {
+  "file": "month_07_noon.png",
+  "via": "render_now",
+  "date": "2026-07-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1784143800000,
+  "derived_weather": "clear",
+  "derived_tick": 14273150400,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "1c089ae39f4d84ac296d7bc201f93cbeb89f05976c0ba0132959b8dd1eb7eead"
+ },
+ {
+  "file": "month_08_noon.png",
+  "via": "render_now",
+  "date": "2026-08-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1786822200000,
+  "derived_weather": "clear",
+  "derived_tick": 14294577600,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "8a68cb5fecb50132f5f2d6705c8089aeade69dbef8c6567e3442d30968efdd4e"
+ },
+ {
+  "file": "month_09_noon.png",
+  "via": "render_now",
+  "date": "2026-09-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1789500600000,
+  "derived_weather": "clear",
+  "derived_tick": 14316004800,
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "268a3333ad415deb7ead6d9ba7cfc20a0997f3d01790dd7bfc2fab3985e6c8fc"
+ },
+ {
+  "file": "month_10_noon.png",
+  "via": "render_now",
+  "date": "2026-10-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1792092600000,
+  "derived_weather": "cloudy",
+  "derived_tick": 14336740800,
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "0f9e64de6a18d38373f2c21e66e36789ef6931cd26babcf259a09453fc5b993d"
+ },
+ {
+  "file": "month_11_noon.png",
+  "via": "render_now",
+  "date": "2026-11-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1794774600000,
+  "derived_weather": "cloudy",
+  "derived_tick": 14358196800,
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "005322d576c97c4b5b1f707b0aeaede5a9ba452296f7c77fccede96d1df4ad01"
+ },
+ {
+  "file": "month_12_noon.png",
+  "via": "render_now",
+  "date": "2026-12-15",
+  "time": "12:30:00.000000",
+  "timezone": "America/Los_Angeles",
+  "epoch_ms": 1797366600000,
+  "derived_weather": "cloudy",
+  "derived_tick": 14378932800,
+  "drawn_state": [
+   "cloudy"
+  ],
+  "sha256": "bf7c3fbe0d22f2ade2a60200e2349da5aacfed704adc54c874c6c255a07bf338"
+ },
+ {
+  "file": "mix_0125.png",
+  "via": "render",
+  "date": "2026-01-25",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "9faa287652ac6c5d27338d5879b4e4fedc74b0d6cd4f11162350db4a0c9eaa9c"
+ },
+ {
+  "file": "mix_0430.png",
+  "via": "render",
+  "date": "2026-04-30",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "09ac830ef52c1940b77f9869925a8a6b78a3ead2fab32950f8eb121eececc841"
+ },
+ {
+  "file": "mix_0726.png",
+  "via": "render",
+  "date": "2026-07-26",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "7e3d6692cdb4495fb236f88264dcca670ece0af37871e8b2494c5707d743cb3c"
+ },
+ {
+  "file": "mix_1027.png",
+  "via": "render",
+  "date": "2026-10-27",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "3ed3a672cd93fb3305e5ae227533d60586be755ab3dc9f2bfef457f3870358db"
+ },
+ {
+  "file": "mix_1231.png",
+  "via": "render",
+  "date": "2026-12-31",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "883a99d001e5108a9d44835ff2c2949bde7a8aeb99b5c66b7a6bcfd7ecec7fb3"
+ },
+ {
+  "file": "special_new_year.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "709f0ceb3a0f9594af48d35b52b83bd9a9980ff72a43c1b32f968e607dd7b19b"
+ },
+ {
+  "file": "special_january.png",
+  "via": "render",
+  "date": "2026-01-15",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "87e5525afc9b53138d38491e9db4cceea553dc68c79530734a8bbf2828fc04d2"
+ },
+ {
+  "file": "special_mlk.png",
+  "via": "render",
+  "date": "2026-01-19",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "ff3a854754a10cf428a750a6997c4b6275ad433816004c29fbbd5d3d8d5777c5"
+ },
+ {
+  "file": "special_valentine.png",
+  "via": "render",
+  "date": "2026-02-14",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "3c54f5f341e38bb5b095d4af1b84b3459106097155e35e32c4422feca4418e06"
+ },
+ {
+  "file": "special_presidents.png",
+  "via": "render",
+  "date": "2026-02-16",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "c8d6160af33ffea5c9478facf4e5b862b8397ac6d1f8f32a9f3b79948c62dc17"
+ },
+ {
+  "file": "special_easter.png",
+  "via": "render",
+  "date": "2026-04-05",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "a0612103247d4897a739b95ade68e998c3945bb302d35e7bc16fe06fc284c0d6"
+ },
+ {
+  "file": "special_memorial.png",
+  "via": "render",
+  "date": "2026-05-25",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "3c6cc570148b52a140073ed01c70f5a52e306a8ae493838642d4580d1c8569ba"
+ },
+ {
+  "file": "special_juneteenth.png",
+  "via": "render",
+  "date": "2026-06-19",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "0c4974f00ecd6518d5170dfbf94c8092a4bb4abbc9ef17cebaf70cf7df5f4e96"
+ },
+ {
+  "file": "special_pride.png",
+  "via": "render",
+  "date": "2026-06-28",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "2d672754f5cd1cdeb4dba12af432b86769e6be95fd515d328aaa3ccf9b376c3b"
+ },
+ {
+  "file": "special_july4.png",
+  "via": "render",
+  "date": "2026-07-04",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "001b9fc5d33f8cd7fd51b5fee0ecf11587697f4cc0f467e37db14b842d5cf07c"
+ },
+ {
+  "file": "special_july4_flag_frame_b.png",
+  "via": "render",
+  "date": "2026-07-04",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 26,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "7efde4074490cb1c18057f06adcd2a717fe7baa087aef22d7b96a20b377c18b8"
+ },
+ {
+  "file": "special_july4_night_tick18.png",
+  "via": "render",
+  "date": "2026-07-04",
+  "time": "21:30:00.000000",
+  "weather": "clear",
+  "frame_number": 18,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "e2e2a8f0edd6aa7da53dc63960342589da2705425968a5f60cfcd821dfac1027"
+ },
+ {
+  "file": "special_july4_night_tick40.png",
+  "via": "render",
+  "date": "2026-07-04",
+  "time": "21:30:00.000000",
+  "weather": "clear",
+  "frame_number": 40,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "7c3a854e5e0cfa75c89c828ba13fb89df3d9b0c427fd6a3da63f1b26e574fa7e"
+ },
+ {
+  "file": "special_july4_night_tick14000000100.png",
+  "via": "render",
+  "date": "2026-07-04",
+  "time": "23:59:00.000000",
+  "weather": "clear",
+  "frame_number": 14000000100,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "5602373a8780c2c6a122f86ed4bf7997dd562ecb86018c6e3b5f3e4e966c6564"
+ },
+ {
+  "file": "special_july.png",
+  "via": "render",
+  "date": "2026-07-15",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "e53280363d852c3608939151c888056497e21b53dc3677efea2a6d68e5c250bb"
+ },
+ {
+  "file": "special_labor.png",
+  "via": "render",
+  "date": "2026-09-07",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "05609a016340aa31a6d8d0b141b82a21c599b51763aa70627934c06eb9abe695"
+ },
+ {
+  "file": "special_columbus.png",
+  "via": "render",
+  "date": "2026-10-12",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "45f2135aeaf98cea1872402ed9b6452f1014c6e5a9957a21e330be367cf8eea3"
+ },
+ {
+  "file": "special_halloween.png",
+  "via": "render",
+  "date": "2026-10-31",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "f70cca368bef211884ced1f5d6982bf2d36b87cd56a5a48a0900a2bfd405f37f"
+ },
+ {
+  "file": "special_halloween_night.png",
+  "via": "render",
+  "date": "2026-10-31",
+  "time": "20:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "b03fc8be92c795f1be0dbed2169fa41965a9db140cc22de2e52706f7ed0babc7"
+ },
+ {
+  "file": "special_veterans.png",
+  "via": "render",
+  "date": "2026-11-11",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "156c491b700d59056c719ec49e0a69328e45538a7020324efeb1a3e2d9b08913"
+ },
+ {
+  "file": "special_thanksgiving.png",
+  "via": "render",
+  "date": "2026-11-26",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "c18185bb9e8564942ba265d7e1e47516f630e1ab858d856c01db25fb4b330cf8"
+ },
+ {
+  "file": "special_december_dusk.png",
+  "via": "render",
+  "date": "2026-12-10",
+  "time": "17:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "dusk"
+  ],
+  "sha256": "062ac23299af49a0089365933fa2343601e0f134abda7b123b46b9a367940605"
+ },
+ {
+  "file": "special_christmas.png",
+  "via": "render",
+  "date": "2026-12-25",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "2bb7fe37b7a77d12b32c5f0fa104a0014a6f6f0fd0fc75397dd8d32f24eb95f9"
+ },
+ {
+  "file": "special_christmas_night.png",
+  "via": "render",
+  "date": "2026-12-25",
+  "time": "21:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "835e842cd0790c125b3e7be39a1a14e2cfd48d52ce3c45d581ad51ee1c403699"
+ },
+ {
+  "file": "special_new_year_eve_before_20.png",
+  "via": "render",
+  "date": "2026-12-31",
+  "time": "19:00:00.000000",
+  "weather": "clear",
+  "frame_number": 18,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "80bf1b085f53f5faade79ccc566610727988ce0ba26d83b8098891a2178448ad"
+ },
+ {
+  "file": "special_new_year_eve_night.png",
+  "via": "render",
+  "date": "2026-12-31",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 18,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "f004fee8a2ca091a17dc46e5850bc2dbb71860b196ab4faea6811e4bffefd7b9"
+ },
+ {
+  "file": "special_valentine_lead.png",
+  "via": "render",
+  "date": "2026-02-12",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "50cd0ce0cd35ccd6e9e63e43ce1ee1bb603ccbb3477e46060c451089c8b92bc2"
+ },
+ {
+  "file": "special_easter_lead.png",
+  "via": "render",
+  "date": "2026-04-03",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "ed6144214d64330006f959f91f867d3701d200b2cf00ec22ab6956d84036d5ba"
+ },
+ {
+  "file": "special_labor_lead.png",
+  "via": "render",
+  "date": "2026-09-05",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "46e57c582bc33166b5305d920d69b17cf2c33b576d54764e1f8d1b76d6f58d52"
+ },
+ {
+  "file": "special_whale_flukes.png",
+  "via": "render",
+  "date": "2026-01-15",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 84,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "day"
+  ],
+  "sha256": "75956b9d5468c697fbd3ff72d9859483186399f7390f60bc660f7e0b2ae62688"
+ },
+ {
+  "file": "special_december_19_night_frame_b.png",
+  "via": "render",
+  "date": "2026-12-19",
+  "time": "21:00:00.000000",
+  "weather": "clear",
+  "frame_number": 36,
+  "state": null,
+  "pose": "stand",
+  "drawn_state": [
+   "night"
+  ],
+  "sha256": "81d1f5dd47dde60e14a25b7b75a9c37a835a44d9fdb1b02e7bd2a30893e58520"
+ },
+ {
+  "file": "special_firework_w_midnight.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "00:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "65920b4af732425c46c13f914c376f81a5feb518a0a7ac736af7d60accc04d5c"
+ },
+ {
+  "file": "special_blossom_more.png",
+  "via": "render",
+  "date": "2026-02-20",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "a60cb9a39ed418c871b4c4baaa0f2162209249603b04b6dc363ec6298a0bae77"
+ },
+ {
+  "file": "surprise_jet_right.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 7351,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "78864f8d023e3d879443809c648b847bb95eeae456b60187ddbac9fc3d94f373"
+ },
+ {
+  "file": "surprise_jet_left.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 3177,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "f33ff9bdb2926cdfff20fdcacac4d1bab62fccb951b22a21678fb7cf0b1919d9"
+ },
+ {
+  "file": "surprise_airship.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 6946,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "d45cabe8f9e36278ee66cfe9652c815746176e9083b44f50db9a3ef8e21686a8"
+ },
+ {
+  "file": "surprise_blue_angels.png",
+  "via": "render",
+  "date": "2026-10-10",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 2403,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "2eb49c81fcf8beac1c64e6533fdaaf67f14205694208e9aee6db598d0d3ed107"
+ },
+ {
+  "file": "surprise_geese.png",
+  "via": "render",
+  "date": "2026-02-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 7608,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "ad3fc1fbf9e07c137bfae8ae638ce46795a21d35f26c466ea326e0c32e90cf38"
+ },
+ {
+  "file": "surprise_gull.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 882,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "51a2ce7d2d5aa6449ef639ff4614822a7c84220552bccf803793ebde3e01d8cd"
+ },
+ {
+  "file": "surprise_rainbow.png",
+  "via": "render",
+  "date": "2026-01-07",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 47550,
+  "state": "cloudy",
+  "pose": "stand",
+  "drawn_state": "cloudy",
+  "sha256": "aa510e69af08ef7c30da5e78011abda190b2511265fc7eeb731b67bc76c0a347"
+ },
+ {
+  "file": "surprise_rainbow_fading.png",
+  "via": "render",
+  "date": "2026-01-07",
+  "time": "14:00:00.000000",
+  "weather": "cloudy",
+  "frame_number": 42910,
+  "state": "cloudy",
+  "pose": "stand",
+  "drawn_state": "cloudy",
+  "sha256": "5bf293dd5554a38862f890eaf009dd9582e53f1d9f472947e755cf96fa3731b4"
+ },
+ {
+  "file": "surprise_jet_lights.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 5885,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "9f2b2f9cdec99394e126ec6470561f0f933cc14d8722b17c695a6c25f5537c72"
+ },
+ {
+  "file": "surprise_satellite.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 65131,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "f705ba5c951662b951d2399c3f84caafe53d7630bd18acd68b22c3c66a645e72"
+ },
+ {
+  "file": "surprise_aurora.png",
+  "via": "render",
+  "date": "2026-02-03",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 10347,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "1f958eeefc09b983932d20e2c3164ab27c8ad7a911bdfacdaa58e227c70a66b4"
+ },
+ {
+  "file": "surprise_aurora_fading.png",
+  "via": "render",
+  "date": "2026-02-03",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 4507,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "bddf4d7ae721145f923d6dfcafc7ffecfcf14ebe84f74104730b409fad88ceca"
+ },
+ {
+  "file": "surprise_aurora_glints.png",
+  "via": "render",
+  "date": "2026-02-03",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 10347,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "1f958eeefc09b983932d20e2c3164ab27c8ad7a911bdfacdaa58e227c70a66b4"
+ },
+ {
+  "file": "surprise_aurora_glints_fading.png",
+  "via": "render",
+  "date": "2026-02-03",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 4507,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "bddf4d7ae721145f923d6dfcafc7ffecfcf14ebe84f74104730b409fad88ceca"
+ },
+ {
+  "file": "surprise_comet.png",
+  "via": "render",
+  "date": "2026-01-19",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "949e02374ffbf53505f01363b34dac951fa9c0f60410b64023edd4d9541a1bd6"
+ },
+ {
+  "file": "surprise_ufo.png",
+  "via": "render",
+  "date": "2026-01-19",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 7711,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "0845bbe59ebe80d0fb57a1ee07a306d899b93e56bbc45c438bd8528b601a1e9f"
+ },
+ {
+  "file": "surprise_ufo_fading.png",
+  "via": "render",
+  "date": "2026-01-19",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 7615,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "d518779b50a3d4f8a5d7308625e24adc18880c69642f09729dd89400cb127357"
+ },
+ {
+  "file": "surprise_santa.png",
+  "via": "render",
+  "date": "2026-12-24",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 2099,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "26bb565eec83aac8855fed8f36c668c3075524bf05b327a03426554d0ccbd327"
+ },
+ {
+  "file": "surprise_witch.png",
+  "via": "render",
+  "date": "2026-10-31",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 2823,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "9777ccbc03ba13b089cca4da1452b107ec67a0052001fd62cc291dd3c83a487a"
+ },
+ {
+  "file": "surprise_container_ship.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 11122,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "c854f8f04f9104b2a33182bf1c16a611c66e99923503959871c36453c3d86672"
+ },
+ {
+  "file": "surprise_trawler.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 11941,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "8393769c70a73b033fce81c71dffcbce1a54d70959dbeca9234bace8e2fc6170"
+ },
+ {
+  "file": "surprise_tug.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 24342,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "8284566dff0a004b82e9c775463794c9918567d42adcdde5525ea6c16da449da"
+ },
+ {
+  "file": "surprise_tall_ship.png",
+  "via": "render",
+  "date": "2026-01-15",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 8502,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "794d374a659cc991ee43fbe2ee98ac04039e5a5f0765008ce5a5725d9173aaad"
+ },
+ {
+  "file": "surprise_regatta.png",
+  "via": "render",
+  "date": "2026-05-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 6500,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "7a4233965952ae330017e6255e4ee96a52c196b2f83ea4051efc58cf56e923d6"
+ },
+ {
+  "file": "surprise_cruise_ship.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "18:00:00.000000",
+  "weather": "clear",
+  "frame_number": 27511,
+  "state": "dusk",
+  "pose": "stand",
+  "drawn_state": "dusk",
+  "sha256": "a44f8fabf880d3bc0c2a8270088420b8065741b6d81c39db92a92cdb7fe67f1e"
+ },
+ {
+  "file": "surprise_squid_boat.png",
+  "via": "render",
+  "date": "2026-01-02",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 74986,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "5a2fdc3f848c96e682b34a868ef795ef3b1bb1e804a7a03747ccc1fb76ae6a4a"
+ },
+ {
+  "file": "surprise_pelicans.png",
+  "via": "render",
+  "date": "2026-05-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 17237,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "2481611204f9f6220633826edb292d90e0ced5a019c9dd2c800be825c3afdf6f"
+ },
+ {
+  "file": "surprise_dolphins.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 8277,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "963e607cb1be5e2f68be4f56cfac7c1b379500b32746002b227b58644026d6ec"
+ },
+ {
+  "file": "surprise_sea_lion.png",
+  "via": "render",
+  "date": "2026-01-02",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "69c8345e135f8153ead70098765055fcb9c7ea3a8c91f7abf9e09d0bd79d51b4"
+ },
+ {
+  "file": "surprise_sandcastle.png",
+  "via": "render",
+  "date": "2026-05-07",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "1313548d0f8965500147928e60f3d0cc7fb0fd0bbe3f4916b923393272394c11"
+ },
+ {
+  "file": "surprise_crab.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 3715,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "5ab8fc40b5633da13534ad724813b6ee39e23da6ef41517178e58ce4eca3f3de"
+ },
+ {
+  "file": "surprise_bonfire.png",
+  "via": "render",
+  "date": "2026-06-01",
+  "time": "18:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "dusk",
+  "pose": "stand",
+  "drawn_state": "dusk",
+  "sha256": "a8a13e0c6b5d94f0274337efe2841483185987c67407302a7aaa93e493dedb7d"
+ },
+ {
+  "file": "surprise_deer.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "18:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "dusk",
+  "pose": "stand",
+  "drawn_state": "dusk",
+  "sha256": "8170b6e96182e03f1bae5743eaec33f0aa0535fd41cf082f52fb2c527caa6723"
+ },
+ {
+  "file": "surprise_egret.png",
+  "via": "render",
+  "date": "2026-01-02",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "69c8345e135f8153ead70098765055fcb9c7ea3a8c91f7abf9e09d0bd79d51b4"
+ },
+ {
+  "file": "surprise_monarch_0.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 288,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "6b3553e31fffebfbb643db226faab781f6413451627cc3677dd05bd18c42e232"
+ },
+ {
+  "file": "surprise_monarch_0_fading.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 170,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "24a1ad32d6085bc4fd776b9abce2d1dc8f383855e5798332cdf278d06c0d23fd"
+ },
+ {
+  "file": "surprise_monarch_1.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 511,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "c04c748ad41558019d2dcd9519bdff67d364b8fa1a21079c47764b6565ef50c9"
+ },
+ {
+  "file": "surprise_monarch_1_fading.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 393,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "c5cf59df55fd9358b95c6dd8da17b08e730ab6b0f11e05b3df52809f3132965c"
+ },
+ {
+  "file": "surprise_monarch_2.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 823,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "8efb0a95a448e521ccf5e803dc269792da94d1bc21c6fa9fdd4850e48f5cadd0"
+ },
+ {
+  "file": "surprise_monarch_2_fading.png",
+  "via": "render",
+  "date": "2026-01-01",
+  "time": "13:00:00.000000",
+  "weather": "clear",
+  "frame_number": 705,
+  "state": "day",
+  "pose": "stand",
+  "drawn_state": "day",
+  "sha256": "a227a6df8457e1284d115b917a4e2647c88c50f6f118ab116fffe5fb5fc879ee"
+ },
+ {
+  "file": "surprise_glowing_surf.png",
+  "via": "render",
+  "date": "2026-08-08",
+  "time": "22:00:00.000000",
+  "weather": "clear",
+  "frame_number": 20,
+  "state": "night",
+  "pose": "stand",
+  "drawn_state": "night",
+  "sha256": "7348deaf6f7938cacec5002bf8b8e46a6a0aab1204f302e3ebe425e520b09673"
+ }
+]

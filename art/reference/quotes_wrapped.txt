@@ -1,0 +1,157 @@
+width 24
+2025-12-31 00	People sleep better|with no debt and a|little cash on hand
+2025-12-31 01	If two beliefs conflict,|keep both for a while
+2025-12-31 02	Pay attention to|the first sip
+2025-12-31 03	A setback means what you|keep saying it means
+2025-12-31 04	Not everything|is a project
+2025-12-31 05	Pay attention to|the first sip
+2025-12-31 06	If two beliefs conflict,|keep both for a while
+2025-12-31 07	You'll cope better|than you expect
+2025-12-31 08	Many small pleasures|beat one big one
+2025-12-31 09	Most of what we worry|about never happens
+2025-12-31 10	People protecting|themselves can look|like they're attacking
+2025-12-31 11	A setback means what you|keep saying it means
+2025-12-31 12	You'll run out of free|days before travel money
+2025-12-31 13	Ask your oldest|relatives about|the years before|you were born
+2025-12-31 14	Everyone you meet is|the expert on one life
+2025-12-31 15	Call a friend with|ordinary news
+2025-12-31 16	Looking back, you|can't tell the|detours from the road
+2025-12-31 17	Make the first step|too small to refuse
+2025-12-31 18	You can want a|thing badly and not|enjoy having it
+2025-12-31 19	People sleep better|with no debt and a|little cash on hand
+2025-12-31 20	So what?
+2025-12-31 21	When a friend tells|you their decision,|understand first
+2025-12-31 22	Leave one day empty
+2025-12-31 23	Assume the kinder reason
+2026-01-01 00	You can want a|thing badly and not|enjoy having it
+2026-01-01 01	Assume the kinder reason
+2026-01-01 02	Leave one day empty
+2026-01-01 03	A setback means what you|keep saying it means
+2026-01-01 04	So what?
+2026-01-01 05	People sleep better|with no debt and a|little cash on hand
+2026-01-01 06	People protecting|themselves can look|like they're attacking
+2026-01-01 07	You'll run out of free|days before travel money
+2026-01-01 08	Not everything|is a project
+2026-01-01 09	Pay attention to|the first sip
+2026-01-01 10	If two beliefs conflict,|keep both for a while
+2026-01-01 11	Many small pleasures|beat one big one
+2026-01-01 12	Most of what we worry|about never happens
+2026-01-01 13	Ask your oldest|relatives about|the years before|you were born
+2026-01-01 14	Make the first step|too small to refuse
+2026-01-01 15	Looking back, you|can't tell the|detours from the road
+2026-01-01 16	Call a friend with|ordinary news
+2026-01-01 17	You'll cope better|than you expect
+2026-01-01 18	When a friend tells|you their decision,|understand first
+2026-01-01 19	Everyone you meet is|the expert on one life
+2026-01-01 20	Leave one day empty
+2026-01-01 21	Many small pleasures|beat one big one
+2026-01-01 22	Pay attention to|the first sip
+2026-01-01 23	Not everything|is a project
+2026-01-02 00	You'll cope better|than you expect
+2026-01-02 01	A setback means what you|keep saying it means
+2026-01-02 02	People protecting|themselves can look|like they're attacking
+2026-01-02 03	So what?
+2026-01-02 04	Looking back, you|can't tell the|detours from the road
+2026-01-02 05	Everyone you meet is|the expert on one life
+2026-01-02 06	You can want a|thing badly and not|enjoy having it
+2026-01-02 07	Make the first step|too small to refuse
+2026-01-02 08	Most of what we worry|about never happens
+2026-01-02 09	Ask your oldest|relatives about|the years before|you were born
+2026-01-02 10	Call a friend with|ordinary news
+2026-01-02 11	You'll run out of free|days before travel money
+2026-01-02 12	Assume the kinder reason
+2026-01-02 13	People sleep better|with no debt and a|little cash on hand
+2026-01-02 14	When a friend tells|you their decision,|understand first
+2026-01-02 15	If two beliefs conflict,|keep both for a while
+2026-01-02 16	You can want a|thing badly and not|enjoy having it
+2026-01-02 17	Not everything|is a project
+2026-01-02 18	Many small pleasures|beat one big one
+2026-01-02 19	Call a friend with|ordinary news
+2026-01-02 20	Assume the kinder reason
+2026-01-02 21	Make the first step|too small to refuse
+2026-01-02 22	When a friend tells|you their decision,|understand first
+2026-01-02 23	You'll cope better|than you expect
+2026-01-03 00	You'll run out of free|days before travel money
+2026-01-03 01	If two beliefs conflict,|keep both for a while
+2026-01-03 02	A setback means what you|keep saying it means
+2026-01-03 03	Looking back, you|can't tell the|detours from the road
+2026-01-03 04	Most of what we worry|about never happens
+2026-01-03 05	Everyone you meet is|the expert on one life
+2026-01-03 06	Leave one day empty
+2026-01-03 07	People protecting|themselves can look|like they're attacking
+2026-01-03 08	People sleep better|with no debt and a|little cash on hand
+2026-01-03 09	Ask your oldest|relatives about|the years before|you were born
+2026-01-03 10	So what?
+2026-01-03 11	Pay attention to|the first sip
+2028-02-28 00	If two beliefs conflict,|keep both for a while
+2028-02-28 01	Many small pleasures|beat one big one
+2028-02-28 02	Assume the kinder reason
+2028-02-28 03	Ask your oldest|relatives about|the years before|you were born
+2028-02-28 04	Make the first step|too small to refuse
+2028-02-28 05	Leave one day empty
+2028-02-28 06	When a friend tells|you their decision,|understand first
+2028-02-28 07	Call a friend with|ordinary news
+2028-02-28 08	Assume the kinder reason
+2028-02-28 09	So what?
+2028-02-28 10	Everyone you meet is|the expert on one life
+2028-02-28 11	People protecting|themselves can look|like they're attacking
+2028-02-28 12	When a friend tells|you their decision,|understand first
+2028-02-28 13	You'll run out of free|days before travel money
+2028-02-28 14	You can want a|thing badly and not|enjoy having it
+2028-02-28 15	If two beliefs conflict,|keep both for a while
+2028-02-28 16	People sleep better|with no debt and a|little cash on hand
+2028-02-28 17	A setback means what you|keep saying it means
+2028-02-28 18	Looking back, you|can't tell the|detours from the road
+2028-02-28 19	Call a friend with|ordinary news
+2028-02-28 20	Most of what we worry|about never happens
+2028-02-28 21	Make the first step|too small to refuse
+2028-02-28 22	Ask your oldest|relatives about|the years before|you were born
+2028-02-28 23	Not everything|is a project
+2028-02-29 00	Leave one day empty
+2028-02-29 01	You'll cope better|than you expect
+2028-02-29 02	Pay attention to|the first sip
+2028-02-29 03	Many small pleasures|beat one big one
+2028-02-29 04	You'll cope better|than you expect
+2028-02-29 05	Many small pleasures|beat one big one
+2028-02-29 06	A setback means what you|keep saying it means
+2028-02-29 07	People sleep better|with no debt and a|little cash on hand
+2028-02-29 08	Not everything|is a project
+2028-02-29 09	If two beliefs conflict,|keep both for a while
+2028-02-29 10	Pay attention to|the first sip
+2028-02-29 11	Leave one day empty
+2028-02-29 12	When a friend tells|you their decision,|understand first
+2028-02-29 13	So what?
+2028-02-29 14	People protecting|themselves can look|like they're attacking
+2028-02-29 15	You'll run out of free|days before travel money
+2028-02-29 16	Make the first step|too small to refuse
+2028-02-29 17	Call a friend with|ordinary news
+2028-02-29 18	You can want a|thing badly and not|enjoy having it
+2028-02-29 19	Assume the kinder reason
+2028-02-29 20	Looking back, you|can't tell the|detours from the road
+2028-02-29 21	Everyone you meet is|the expert on one life
+2028-02-29 22	Most of what we worry|about never happens
+2028-02-29 23	Ask your oldest|relatives about|the years before|you were born
+2028-03-01 00	Leave one day empty
+2028-03-01 01	You'll cope better|than you expect
+2028-03-01 02	Looking back, you|can't tell the|detours from the road
+2028-03-01 03	Make the first step|too small to refuse
+2028-03-01 04	You can want a|thing badly and not|enjoy having it
+2028-03-01 05	If two beliefs conflict,|keep both for a while
+2028-03-01 06	Many small pleasures|beat one big one
+2028-03-01 07	People sleep better|with no debt and a|little cash on hand
+2028-03-01 08	A setback means what you|keep saying it means
+2028-03-01 09	Ask your oldest|relatives about|the years before|you were born
+2028-03-01 10	Assume the kinder reason
+2028-03-01 11	People protecting|themselves can look|like they're attacking
+2028-03-01 12	So what?
+2028-03-01 13	When a friend tells|you their decision,|understand first
+2028-03-01 14	Pay attention to|the first sip
+2028-03-01 15	You'll run out of free|days before travel money
+2028-03-01 16	Everyone you meet is|the expert on one life
+2028-03-01 17	Most of what we worry|about never happens
+2028-03-01 18	Not everything|is a project
+2028-03-01 19	Call a friend with|ordinary news
+2028-03-01 20	Assume the kinder reason
+2028-03-01 21	Everyone you meet is|the expert on one life
+2028-03-01 22	When a friend tells|you their decision,|understand first
+2028-03-01 23	Call a friend with|ordinary news

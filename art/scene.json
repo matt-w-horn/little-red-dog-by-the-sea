@@ -1,0 +1,6538 @@
+{
+ "note": "Positions, timings and choices for scene.py. Written by tools/scene_build.py from its tables: change a number there and rebuild, not here.",
+ "size": [
+  480,
+  270
+ ],
+ "scale": 8,
+ "ticks_per_second": 8,
+ "evening": {
+  "day": 100,
+  "evening": 100,
+  "night": 40,
+  "night_from": 1290,
+  "night_ramp": 10,
+  "hold_minutes": 5,
+  "fade_minutes": 10,
+  "dawn_ramp": 30,
+  "warm_after_sunset": 90,
+  "warm_green": 93,
+  "warm_blue": 74,
+  "note": "day, evening, night: percent; night_from: minute of the day; see scene.settled_brightness."
+ },
+ "weather": {
+  "names": [
+   "clear",
+   "cloudy",
+   "rain"
+  ],
+  "roll_question": 1,
+  "roll_bound": 100,
+  "shower": {
+   "start": 360,
+   "start_question": 4,
+   "start_range": 720,
+   "length": 90,
+   "length_question": 5,
+   "length_range": 240
+  },
+  "odds": [
+   [
+    42,
+    66,
+    100
+   ],
+   [
+    44,
+    68,
+    100
+   ],
+   [
+    48,
+    72,
+    100
+   ],
+   [
+    62,
+    82,
+    100
+   ],
+   [
+    72,
+    90,
+    100
+   ],
+   [
+    84,
+    96,
+    100
+   ],
+   [
+    88,
+    99,
+    100
+   ],
+   [
+    88,
+    98,
+    100
+   ],
+   [
+    86,
+    95,
+    100
+   ],
+   [
+    78,
+    89,
+    100
+   ],
+   [
+    56,
+    75,
+    100
+   ],
+   [
+    44,
+    67,
+    100
+   ]
+  ],
+  "gloom": {
+   "odds": [
+    5,
+    5,
+    8,
+    15,
+    30,
+    50,
+    55,
+    50,
+    30,
+    12,
+    5,
+    5
+   ],
+   "question": 6,
+   "until": 600,
+   "until_question": 7,
+   "until_range": 150
+  },
+  "note": "odds: one row for each month, January first. gloom: see scene.gloom_end."
+ },
+ "months": {
+  "fade_days": 10,
+  "note": "art/palettes/<mm>/<state>.json is month mm in a lighting state. A month shows its own palette until its last fade_days days; on those it is mixed with the next month's, k parts in fade_days + 1, k = 1 on the first of those days (scene.month_mix)."
+ },
+ "order": [
+  "sky",
+  "surprises_sky",
+  "sun",
+  "moon",
+  "stars",
+  "clouds",
+  "sea",
+  "sea_fx",
+  "path_sun",
+  "path_moon",
+  "specials_back",
+  "surprises_back",
+  "sand",
+  "house_shadow",
+  "dog_shadow",
+  "foam",
+  "ripples",
+  "hill",
+  "lighthouse",
+  "specials_front",
+  "surprises_front",
+  "beam",
+  "house_back",
+  "dog",
+  "house_front",
+  "rain_far",
+  "rain_near",
+  "text"
+ ],
+ "specials": {
+  "file": "specials.png",
+  "items": [
+   {
+    "when": [
+     [
+      "range",
+      4,
+      1,
+      9,
+      30
+     ]
+    ],
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "sailboat",
+    "slot": "specials_back",
+    "at": [
+     318,
+     93
+    ],
+    "sheet": [
+     0,
+     96,
+     7,
+     9
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      6,
+      1,
+      8,
+      31
+     ]
+    ],
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "fog_bank",
+    "slot": "specials_back",
+    "at": [
+     346,
+     92
+    ],
+    "sheet": [
+     0,
+     119,
+     134,
+     10
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      11,
+      15,
+      1,
+      31
+     ]
+    ],
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "crab_boat",
+    "slot": "specials_back",
+    "at": [
+     322,
+     98
+    ],
+    "sheet": [
+     0,
+     105,
+     10,
+     5
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      15,
+      4,
+      30
+     ]
+    ],
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "whale",
+    "slot": "specials_back",
+    "at": [
+     424,
+     104
+    ],
+    "sheet": [
+     0,
+     213,
+     13,
+     10
+    ],
+    "frames": 40,
+    "ticks_per_frame": 8
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      1,
+      2,
+      29
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "driftwood",
+    "slot": "specials_front",
+    "at": [
+     88,
+     192
+    ],
+    "sheet": [
+     0,
+     110,
+     24,
+     6
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      1,
+      2,
+      29
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "driftwood_small",
+    "slot": "specials_front",
+    "at": [
+     126,
+     204
+    ],
+    "sheet": [
+     0,
+     116,
+     10,
+     3
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      11,
+      1,
+      2,
+      29
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "smoke_blue_house",
+    "slot": "specials_front",
+    "at": [
+     80,
+     95
+    ],
+    "sheet": [
+     0,
+     200,
+     7,
+     13
+    ],
+    "frames": 6,
+    "ticks_per_frame": 8
+   },
+   {
+    "when": [
+     [
+      "range",
+      11,
+      1,
+      2,
+      29
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 20,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "smoke_red_house",
+    "slot": "specials_front",
+    "at": [
+     189,
+     77
+    ],
+    "sheet": [
+     0,
+     200,
+     7,
+     13
+    ],
+    "frames": 6,
+    "ticks_per_frame": 8
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      1,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "lights_blue_house",
+    "slot": "specials_front",
+    "at": [
+     69,
+     110
+    ],
+    "sheet": [
+     0,
+     129,
+     17,
+     4
+    ],
+    "frames": 2,
+    "ticks_per_frame": 16
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      1,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 16,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "lights_red_house",
+    "slot": "specials_front",
+    "at": [
+     181,
+     92
+    ],
+    "sheet": [
+     0,
+     133,
+     14,
+     4
+    ],
+    "frames": 2,
+    "ticks_per_frame": 16
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      5,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "wreath_blue_house",
+    "slot": "specials_front",
+    "at": [
+     76,
+     114
+    ],
+    "sheet": [
+     0,
+     82,
+     3,
+     3
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      5,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "wreath_red_house",
+    "slot": "specials_front",
+    "at": [
+     186,
+     96
+    ],
+    "sheet": [
+     0,
+     82,
+     3,
+     3
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      8,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "lights_lighthouse",
+    "slot": "specials_front",
+    "at": [
+     233,
+     84
+    ],
+    "sheet": [
+     0,
+     137,
+     7,
+     17
+    ],
+    "frames": 2,
+    "ticks_per_frame": 16
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      11,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 8,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "tree",
+    "slot": "specials_front",
+    "at": [
+     55,
+     107
+    ],
+    "sheet": [
+     0,
+     184,
+     11,
+     16
+    ],
+    "frames": 2,
+    "ticks_per_frame": 16
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      15,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 16,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "lights_pine_left",
+    "slot": "specials_front",
+    "at": [
+     160,
+     76
+    ],
+    "sheet": [
+     0,
+     154,
+     14,
+     5
+    ],
+    "frames": 2,
+    "ticks_per_frame": 16
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      15,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "lights_pine_right",
+    "slot": "specials_front",
+    "at": [
+     200,
+     85
+    ],
+    "sheet": [
+     0,
+     154,
+     14,
+     5
+    ],
+    "frames": 2,
+    "ticks_per_frame": 16
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      19,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 8,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "light_string",
+    "slot": "specials_front",
+    "at": [
+     195,
+     86
+    ],
+    "sheet": [
+     0,
+     159,
+     38,
+     11
+    ],
+    "frames": 2,
+    "ticks_per_frame": 16
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      24,
+      12,
+      25
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "santa_hat",
+    "slot": "specials_front",
+    "at": [
+     232,
+     77
+    ],
+    "sheet": [
+     0,
+     85,
+     8,
+     4
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      24,
+      12,
+      25
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "lanterns",
+    "slot": "specials_front",
+    "at": [
+     6,
+     119
+    ],
+    "sheet": [
+     0,
+     170,
+     145,
+     14
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      24,
+      12,
+      25
+     ]
+    ],
+    "states": [
+     "night",
+     "dusk",
+     "dawn"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "star",
+    "slot": "specials_back",
+    "at": [
+     214,
+     28
+    ],
+    "sheet": [
+     0,
+     89,
+     7,
+     7
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      1,
+      1,
+      1,
+      1
+     ],
+     [
+      "nth",
+      1,
+      0,
+      3,
+      0,
+      0
+     ],
+     [
+      "nth",
+      2,
+      0,
+      3,
+      0,
+      0
+     ],
+     [
+      "range",
+      7,
+      4,
+      7,
+      4
+     ],
+     [
+      "nth",
+      9,
+      0,
+      1,
+      0,
+      0
+     ],
+     [
+      "nth",
+      10,
+      0,
+      2,
+      0,
+      0
+     ],
+     [
+      "range",
+      11,
+      11,
+      11,
+      11
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "flag",
+    "slot": "specials_front",
+    "at": [
+     243,
+     87
+    ],
+    "sheet": [
+     0,
+     223,
+     9,
+     18
+    ],
+    "frames": 16,
+    "ticks_per_frame": 6
+   },
+   {
+    "when": [
+     [
+      "nth",
+      5,
+      0,
+      -1,
+      0,
+      0
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "flag_half_staff",
+    "slot": "specials_front",
+    "at": [
+     243,
+     87
+    ],
+    "sheet": [
+     0,
+     241,
+     9,
+     18
+    ],
+    "frames": 16,
+    "ticks_per_frame": 6
+   },
+   {
+    "when": [
+     [
+      "range",
+      6,
+      19,
+      6,
+      19
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "flag_juneteenth",
+    "slot": "specials_front",
+    "at": [
+     243,
+     87
+    ],
+    "sheet": [
+     0,
+     259,
+     9,
+     18
+    ],
+    "frames": 16,
+    "ticks_per_frame": 6
+   },
+   {
+    "when": [
+     [
+      "nth",
+      6,
+      6,
+      -1,
+      0,
+      0
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "flag_rainbow",
+    "slot": "specials_front",
+    "at": [
+     243,
+     87
+    ],
+    "sheet": [
+     0,
+     277,
+     9,
+     18
+    ],
+    "frames": 16,
+    "ticks_per_frame": 6
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      30,
+      1,
+      1
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "balloons",
+    "slot": "specials_front",
+    "at": [
+     86,
+     112
+    ],
+    "sheet": [
+     0,
+     12,
+     5,
+     7
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      2,
+      12,
+      2,
+      14
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "heart",
+    "slot": "specials_front",
+    "at": [
+     76,
+     114
+    ],
+    "sheet": [
+     0,
+     19,
+     3,
+     3
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      2,
+      14,
+      2,
+      14
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "heart_in_sand",
+    "slot": "specials_front",
+    "at": [
+     96,
+     168
+    ],
+    "sheet": [
+     0,
+     22,
+     13,
+     11
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      2,
+      14,
+      2,
+      14
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "pennants_hearts",
+    "slot": "specials_front",
+    "at": [
+     182,
+     96
+    ],
+    "sheet": [
+     0,
+     10,
+     12,
+     2
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "nth",
+      2,
+      0,
+      3,
+      0,
+      0
+     ],
+     [
+      "range",
+      7,
+      2,
+      7,
+      4
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "bunting_blue_house",
+    "slot": "specials_front",
+    "at": [
+     70,
+     114
+    ],
+    "sheet": [
+     0,
+     0,
+     15,
+     2
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      7,
+      4,
+      7,
+      4
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "bunting_red_house",
+    "slot": "specials_front",
+    "at": [
+     182,
+     96
+    ],
+    "sheet": [
+     0,
+     2,
+     12,
+     2
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "easter",
+      2,
+      0
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "bunny",
+    "slot": "specials_front",
+    "at": [
+     172,
+     101
+    ],
+    "sheet": [
+     0,
+     33,
+     5,
+     7
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "easter",
+      0,
+      0
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "eggs",
+    "slot": "specials_front",
+    "at": [
+     0,
+     118
+    ],
+    "sheet": [
+     0,
+     40,
+     143,
+     9
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "nth",
+      5,
+      0,
+      -1,
+      2,
+      0
+     ],
+     [
+      "range",
+      11,
+      9,
+      11,
+      11
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "small_flags",
+    "slot": "specials_front",
+    "at": [
+     90,
+     120
+    ],
+    "sheet": [
+     0,
+     58,
+     14,
+     4
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      6,
+      17,
+      6,
+      19
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "bunting_juneteenth",
+    "slot": "specials_front",
+    "at": [
+     70,
+     114
+    ],
+    "sheet": [
+     0,
+     4,
+     15,
+     2
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "nth",
+      6,
+      6,
+      -1,
+      2,
+      0
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "bunting_rainbow_blue_house",
+    "slot": "specials_front",
+    "at": [
+     70,
+     114
+    ],
+    "sheet": [
+     0,
+     6,
+     15,
+     2
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "nth",
+      6,
+      6,
+      -1,
+      0,
+      0
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "bunting_rainbow_red_house",
+    "slot": "specials_front",
+    "at": [
+     182,
+     96
+    ],
+    "sheet": [
+     0,
+     8,
+     12,
+     2
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      7,
+      4,
+      7,
+      4
+     ],
+     [
+      "nth",
+      9,
+      0,
+      1,
+      2,
+      0
+     ]
+    ],
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "beach_day",
+    "slot": "specials_front",
+    "at": [
+     104,
+     146
+    ],
+    "sheet": [
+     0,
+     49,
+     20,
+     9
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      10,
+      29,
+      10,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "jack_blue_house",
+    "slot": "specials_front",
+    "at": [
+     80,
+     120
+    ],
+    "sheet": [
+     0,
+     72,
+     5,
+     5
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      10,
+      31,
+      10,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "jack_red_house",
+    "slot": "specials_front",
+    "at": [
+     195,
+     99
+    ],
+    "sheet": [
+     0,
+     72,
+     5,
+     5
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      10,
+      31,
+      10,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "ghost",
+    "slot": "specials_front",
+    "at": [
+     88,
+     116
+    ],
+    "sheet": [
+     0,
+     77,
+     5,
+     5
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "nth",
+      11,
+      3,
+      4,
+      2,
+      0
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "harvest",
+    "slot": "specials_front",
+    "at": [
+     87,
+     119
+    ],
+    "sheet": [
+     0,
+     69,
+     8,
+     3
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "nth",
+      11,
+      3,
+      4,
+      0,
+      0
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "turkey",
+    "slot": "specials_front",
+    "at": [
+     169,
+     101
+    ],
+    "sheet": [
+     0,
+     62,
+     10,
+     7
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      7,
+      4,
+      7,
+      4
+     ],
+     [
+      "range",
+      12,
+      31,
+      12,
+      31
+     ]
+    ],
+    "states": [
+     "night"
+    ],
+    "hours": [
+     20,
+     24
+    ],
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "firework_w",
+    "slot": "specials_back",
+    "at": [
+     289,
+     57
+    ],
+    "sheet": [
+     0,
+     295,
+     23,
+     23
+    ],
+    "frames": 16,
+    "ticks_per_frame": 4
+   },
+   {
+    "when": [
+     [
+      "range",
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "states": [
+     "night"
+    ],
+    "hours": [
+     0,
+     1
+    ],
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "firework_w_midnight",
+    "slot": "specials_back",
+    "at": [
+     289,
+     57
+    ],
+    "sheet": [
+     0,
+     295,
+     23,
+     23
+    ],
+    "frames": 16,
+    "ticks_per_frame": 4
+   },
+   {
+    "when": [
+     [
+      "range",
+      7,
+      4,
+      7,
+      4
+     ],
+     [
+      "range",
+      12,
+      31,
+      12,
+      31
+     ]
+    ],
+    "states": [
+     "night"
+    ],
+    "hours": [
+     20,
+     24
+    ],
+    "ahead": 22,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "firework_r",
+    "slot": "specials_back",
+    "at": [
+     337,
+     55
+    ],
+    "sheet": [
+     0,
+     318,
+     23,
+     23
+    ],
+    "frames": 16,
+    "ticks_per_frame": 4
+   },
+   {
+    "when": [
+     [
+      "range",
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "states": [
+     "night"
+    ],
+    "hours": [
+     0,
+     1
+    ],
+    "ahead": 22,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "firework_r_midnight",
+    "slot": "specials_back",
+    "at": [
+     337,
+     55
+    ],
+    "sheet": [
+     0,
+     318,
+     23,
+     23
+    ],
+    "frames": 16,
+    "ticks_per_frame": 4
+   },
+   {
+    "when": [
+     [
+      "range",
+      7,
+      4,
+      7,
+      4
+     ],
+     [
+      "range",
+      12,
+      31,
+      12,
+      31
+     ]
+    ],
+    "states": [
+     "night"
+    ],
+    "hours": [
+     20,
+     24
+    ],
+    "ahead": 43,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "firework_b",
+    "slot": "specials_back",
+    "at": [
+     443,
+     60
+    ],
+    "sheet": [
+     0,
+     341,
+     23,
+     23
+    ],
+    "frames": 16,
+    "ticks_per_frame": 4
+   },
+   {
+    "when": [
+     [
+      "range",
+      1,
+      1,
+      1,
+      1
+     ]
+    ],
+    "states": [
+     "night"
+    ],
+    "hours": [
+     0,
+     1
+    ],
+    "ahead": 43,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "firework_b_midnight",
+    "slot": "specials_back",
+    "at": [
+     443,
+     60
+    ],
+    "sheet": [
+     0,
+     341,
+     23,
+     23
+    ],
+    "frames": 16,
+    "ticks_per_frame": 4
+   },
+   {
+    "when": [
+     [
+      "range",
+      2,
+      1,
+      4,
+      15
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "mustard",
+    "slot": "specials_front",
+    "at": [
+     157,
+     92
+    ],
+    "sheet": [
+     0,
+     364,
+     56,
+     9
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      2,
+      15,
+      3,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "mustard_more",
+    "slot": "specials_front",
+    "at": [
+     26,
+     99
+    ],
+    "sheet": [
+     0,
+     373,
+     190,
+     23
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      3,
+      1,
+      5,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "poppies",
+    "slot": "specials_front",
+    "at": [
+     7,
+     100
+    ],
+    "sheet": [
+     0,
+     396,
+     197,
+     28
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      3,
+      20,
+      5,
+      10
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "poppies_more",
+    "slot": "specials_front",
+    "at": [
+     32,
+     102
+    ],
+    "sheet": [
+     0,
+     424,
+     145,
+     24
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      4,
+      1,
+      6,
+      10
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "lupine",
+    "slot": "specials_front",
+    "at": [
+     129,
+     96
+    ],
+    "sheet": [
+     0,
+     448,
+     89,
+     18
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      4,
+      15,
+      5,
+      25
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "lupine_more",
+    "slot": "specials_front",
+    "at": [
+     14,
+     113
+    ],
+    "sheet": [
+     0,
+     466,
+     90,
+     10
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      1,
+      15,
+      4,
+      30
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "calla",
+    "slot": "specials_front",
+    "at": [
+     64,
+     117
+    ],
+    "sheet": [
+     0,
+     476,
+     4,
+     6
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      2,
+      1,
+      4,
+      10
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "calla_more",
+    "slot": "specials_front",
+    "at": [
+     85,
+     118
+    ],
+    "sheet": [
+     0,
+     482,
+     4,
+     6
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      6,
+      1,
+      8,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "agapanthus",
+    "slot": "specials_front",
+    "at": [
+     175,
+     98
+    ],
+    "sheet": [
+     0,
+     488,
+     6,
+     6
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      6,
+      15,
+      8,
+      15
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "agapanthus_more",
+    "slot": "specials_front",
+    "at": [
+     196,
+     101
+    ],
+    "sheet": [
+     0,
+     494,
+     3,
+     4
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      7,
+      1,
+      9,
+      20
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "sunflowers",
+    "slot": "specials_front",
+    "at": [
+     86,
+     115
+    ],
+    "sheet": [
+     0,
+     498,
+     6,
+     7
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      7,
+      15,
+      9,
+      5
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "sunflowers_more",
+    "slot": "specials_front",
+    "at": [
+     92,
+     117
+    ],
+    "sheet": [
+     0,
+     505,
+     3,
+     6
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      8,
+      15,
+      11,
+      30
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "pampas",
+    "slot": "specials_front",
+    "at": [
+     158,
+     95
+    ],
+    "sheet": [
+     0,
+     511,
+     45,
+     10
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      9,
+      1,
+      11,
+      15
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "pampas_more",
+    "slot": "specials_front",
+    "at": [
+     217,
+     97
+    ],
+    "sheet": [
+     0,
+     521,
+     5,
+     6
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      11,
+      15,
+      1,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "toyon",
+    "slot": "specials_front",
+    "at": [
+     110,
+     115
+    ],
+    "sheet": [
+     0,
+     527,
+     5,
+     4
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      1,
+      1,
+      15
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "toyon_more",
+    "slot": "specials_front",
+    "at": [
+     30,
+     120
+    ],
+    "sheet": [
+     0,
+     531,
+     5,
+     4
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      1,
+      2,
+      15
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "mushrooms",
+    "slot": "specials_front",
+    "at": [
+     17,
+     115
+    ],
+    "sheet": [
+     0,
+     535,
+     29,
+     5
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      15,
+      2,
+      1
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "mushrooms_more",
+    "slot": "specials_front",
+    "at": [
+     46,
+     111
+    ],
+    "sheet": [
+     0,
+     540,
+     81,
+     8
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      15,
+      2,
+      28
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "pokers",
+    "slot": "specials_front",
+    "at": [
+     228,
+     99
+    ],
+    "sheet": [
+     0,
+     548,
+     3,
+     4
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      5,
+      15,
+      10,
+      15
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "bougainvillea",
+    "slot": "specials_front",
+    "at": [
+     190,
+     95
+    ],
+    "sheet": [
+     0,
+     552,
+     4,
+     6
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      1,
+      1,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "agave",
+    "slot": "specials_front",
+    "at": [
+     221,
+     100
+    ],
+    "sheet": [
+     0,
+     558,
+     5,
+     3
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      1,
+      1,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "ice_plant",
+    "slot": "specials_front",
+    "at": [
+     214,
+     102
+    ],
+    "sheet": [
+     0,
+     561,
+     17,
+     2
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      4,
+      15,
+      7,
+      15
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "ice_plant_flowers",
+    "slot": "specials_front",
+    "at": [
+     214,
+     102
+    ],
+    "sheet": [
+     0,
+     563,
+     17,
+     2
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      1,
+      1,
+      12,
+      31
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "dune_grass",
+    "slot": "specials_front",
+    "at": [
+     10,
+     124
+    ],
+    "sheet": [
+     0,
+     565,
+     140,
+     14
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      2,
+      10,
+      3,
+      20
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "blossom",
+    "slot": "specials_front",
+    "at": [
+     38,
+     98
+    ],
+    "sheet": [
+     0,
+     579,
+     88,
+     10
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      2,
+      20,
+      3,
+      10
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "blossom_more",
+    "slot": "specials_front",
+    "at": [
+     32,
+     99
+    ],
+    "sheet": [
+     0,
+     589,
+     92,
+     10
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     9600,
+     1,
+     1524,
+     201
+    ],
+    "move": [
+     1,
+     3,
+     -1,
+     90
+    ],
+    "jitter": [
+     0,
+     36,
+     201
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "jet_right",
+    "slot": "surprises_back",
+    "at": [
+     -28,
+     14
+    ],
+    "sheet": [
+     0,
+     599,
+     26,
+     3
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     14400,
+     1,
+     1524,
+     202
+    ],
+    "move": [
+     -1,
+     3,
+     -1,
+     120
+    ],
+    "jitter": [
+     0,
+     30,
+     202
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "jet_left",
+    "slot": "surprises_back",
+    "at": [
+     480,
+     10
+    ],
+    "sheet": [
+     0,
+     602,
+     26,
+     3
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     10,
+     203,
+     1,
+     0
+    ],
+    "every": [
+     28800,
+     1,
+     5100,
+     203
+    ],
+    "move": [
+     1,
+     10,
+     0,
+     1
+    ],
+    "jitter": [
+     0,
+     22,
+     203
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "airship",
+    "slot": "surprises_back",
+    "at": [
+     -30,
+     44
+    ],
+    "sheet": [
+     0,
+     625,
+     28,
+     10
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "nth",
+      10,
+      0,
+      2,
+      2,
+      -1
+     ]
+    ],
+    "states": [
+     "day",
+     "cloudy"
+    ],
+    "hours": [
+     12,
+     16
+    ],
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     4800,
+     1,
+     180,
+     204
+    ],
+    "move": [
+     3,
+     1,
+     0,
+     1
+    ],
+    "jitter": [
+     0,
+     30,
+     204
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "blue_angels",
+    "slot": "surprises_back",
+    "at": [
+     -54,
+     24
+    ],
+    "sheet": [
+     0,
+     635,
+     52,
+     11
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      10,
+      1,
+      12,
+      15
+     ],
+     [
+      "range",
+      2,
+      1,
+      3,
+      31
+     ]
+    ],
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     14400,
+     1,
+     1530,
+     205
+    ],
+    "move": [
+     1,
+     3,
+     -1,
+     60
+    ],
+    "jitter": [
+     0,
+     30,
+     205
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "geese",
+    "slot": "surprises_back",
+    "at": [
+     -26,
+     30
+    ],
+    "sheet": [
+     0,
+     784,
+     24,
+     12
+    ],
+    "frames": 2,
+    "ticks_per_frame": 5
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     2400,
+     2,
+     1000,
+     206
+    ],
+    "move": [
+     1,
+     2,
+     -1,
+     50
+    ],
+    "jitter": [
+     0,
+     24,
+     206
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "gull",
+    "slot": "surprises_back",
+    "at": [
+     -6,
+     70
+    ],
+    "sheet": [
+     0,
+     796,
+     5,
+     3
+    ],
+    "frames": 4,
+    "ticks_per_frame": 3
+   },
+   {
+    "when": null,
+    "states": [
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     5,
+     207,
+     1,
+     0
+    ],
+    "every": [
+     57600,
+     1,
+     9600,
+     207
+    ],
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 480,
+    "name": "rainbow",
+    "slot": "surprises_back",
+    "at": [
+     150,
+     18
+    ],
+    "sheet": [
+     0,
+     696,
+     301,
+     82
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "night"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": true,
+    "days": null,
+    "every": [
+     9600,
+     1,
+     1524,
+     208
+    ],
+    "move": [
+     1,
+     3,
+     -1,
+     90
+    ],
+    "jitter": [
+     0,
+     36,
+     208
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "jet_lights",
+    "slot": "surprises_back",
+    "at": [
+     -4,
+     14
+    ],
+    "sheet": [
+     0,
+     778,
+     3,
+     1
+    ],
+    "frames": 2,
+    "ticks_per_frame": 6
+   },
+   {
+    "when": null,
+    "states": [
+     "night"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": true,
+    "days": null,
+    "every": [
+     14400,
+     2,
+     1300,
+     209
+    ],
+    "move": [
+     1,
+     3,
+     -1,
+     30
+    ],
+    "jitter": [
+     200,
+     20,
+     209
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "satellite",
+    "slot": "surprises_back",
+    "at": [
+     60,
+     60
+    ],
+    "sheet": [
+     0,
+     605,
+     1,
+     1
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "night"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": true,
+    "days": [
+     40,
+     210,
+     1,
+     1
+    ],
+    "every": [
+     28800,
+     2,
+     12000,
+     210
+    ],
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 480,
+    "name": "aurora",
+    "slot": "surprises_sky",
+    "at": [
+     110,
+     2
+    ],
+    "sheet": [
+     0,
+     859,
+     370,
+     99
+    ],
+    "frames": 12,
+    "ticks_per_frame": 16
+   },
+   {
+    "when": null,
+    "states": [
+     "night"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": true,
+    "days": [
+     40,
+     210,
+     1,
+     1
+    ],
+    "every": [
+     28800,
+     2,
+     12000,
+     210
+    ],
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 480,
+    "name": "aurora_glints",
+    "slot": "surprises_back",
+    "at": [
+     110,
+     101
+    ],
+    "sheet": [
+     0,
+     958,
+     370,
+     29
+    ],
+    "frames": 12,
+    "ticks_per_frame": 16
+   },
+   {
+    "when": null,
+    "states": [
+     "night"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": true,
+    "days": [
+     14,
+     211,
+     10,
+     1
+    ],
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "comet",
+    "slot": "surprises_back",
+    "at": [
+     236,
+     44
+    ],
+    "sheet": [
+     0,
+     606,
+     16,
+     8
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "night"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": true,
+    "days": [
+     60,
+     212,
+     1,
+     1
+    ],
+    "every": [
+     28800,
+     1,
+     200,
+     212
+    ],
+    "move": null,
+    "jitter": [
+     120,
+     24,
+     212
+    ],
+    "once": false,
+    "fade": 12,
+    "name": "ufo",
+    "slot": "surprises_back",
+    "at": [
+     300,
+     48
+    ],
+    "sheet": [
+     0,
+     779,
+     11,
+     5
+    ],
+    "frames": 2,
+    "ticks_per_frame": 4
+   },
+   {
+    "when": [
+     [
+      "range",
+      12,
+      24,
+      12,
+      24
+     ]
+    ],
+    "states": [
+     "night"
+    ],
+    "hours": [
+     18,
+     24
+    ],
+    "ahead": 0,
+    "clear": true,
+    "days": null,
+    "every": [
+     4800,
+     1,
+     262,
+     213
+    ],
+    "move": [
+     2,
+     1,
+     -1,
+     12
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "santa",
+    "slot": "surprises_back",
+    "at": [
+     -40,
+     82
+    ],
+    "sheet": [
+     0,
+     614,
+     40,
+     5
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      10,
+      31,
+      10,
+      31
+     ]
+    ],
+    "states": [
+     "night"
+    ],
+    "hours": [
+     18,
+     24
+    ],
+    "ahead": 0,
+    "clear": true,
+    "days": null,
+    "every": [
+     4800,
+     1,
+     250,
+     214
+    ],
+    "move": [
+     -2,
+     1,
+     1,
+     20
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "witch",
+    "slot": "surprises_back",
+    "at": [
+     480,
+     56
+    ],
+    "sheet": [
+     0,
+     619,
+     13,
+     6
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     19200,
+     2,
+     8192,
+     215
+    ],
+    "move": [
+     -1,
+     16,
+     0,
+     1
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "container_ship",
+    "slot": "surprises_back",
+    "at": [
+     480,
+     96
+    ],
+    "sheet": [
+     0,
+     646,
+     32,
+     7
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     28800,
+     2,
+     9880,
+     216
+    ],
+    "move": [
+     1,
+     20,
+     0,
+     1
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "trawler",
+    "slot": "surprises_back",
+    "at": [
+     -14,
+     95
+    ],
+    "sheet": [
+     0,
+     799,
+     14,
+     9
+    ],
+    "frames": 2,
+    "ticks_per_frame": 8
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     3,
+     217,
+     1,
+     0
+    ],
+    "every": [
+     43200,
+     1,
+     14280,
+     217
+    ],
+    "move": [
+     -1,
+     28,
+     0,
+     1
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "tug",
+    "slot": "surprises_back",
+    "at": [
+     480,
+     98
+    ],
+    "sheet": [
+     0,
+     653,
+     30,
+     5
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     15,
+     218,
+     1,
+     0
+    ],
+    "every": [
+     28800,
+     1,
+     11976,
+     218
+    ],
+    "move": [
+     1,
+     24,
+     0,
+     1
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "tall_ship",
+    "slot": "surprises_back",
+    "at": [
+     -19,
+     93
+    ],
+    "sheet": [
+     0,
+     658,
+     19,
+     10
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      5,
+      1,
+      9,
+      30
+     ]
+    ],
+    "states": [
+     "day"
+    ],
+    "hours": [
+     12,
+     18
+    ],
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     4,
+     219,
+     1,
+     0
+    ],
+    "every": [
+     14400,
+     1,
+     5160,
+     219
+    ],
+    "move": [
+     1,
+     10,
+     0,
+     1
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "regatta",
+    "slot": "surprises_back",
+    "at": [
+     -36,
+     95
+    ],
+    "sheet": [
+     0,
+     668,
+     36,
+     8
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "dusk",
+     "night"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     5,
+     220,
+     1,
+     1
+    ],
+    "every": [
+     57600,
+     1,
+     6096,
+     220
+    ],
+    "move": [
+     1,
+     12,
+     0,
+     1
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "cruise_ship",
+    "slot": "surprises_back",
+    "at": [
+     -28,
+     96
+    ],
+    "sheet": [
+     0,
+     676,
+     28,
+     7
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      10,
+      1,
+      3,
+      31
+     ]
+    ],
+    "states": [
+     "night"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     3,
+     221,
+     1,
+     1
+    ],
+    "every": [
+     28800,
+     2,
+     11736,
+     221
+    ],
+    "move": [
+     -1,
+     24,
+     0,
+     1
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "squid_boat",
+    "slot": "surprises_back",
+    "at": [
+     480,
+     98
+    ],
+    "sheet": [
+     0,
+     683,
+     9,
+     5
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": [
+     [
+      "range",
+      5,
+      1,
+      11,
+      30
+     ]
+    ],
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     4800,
+     2,
+     1048,
+     222
+    ],
+    "move": [
+     -1,
+     2,
+     0,
+     1
+    ],
+    "jitter": [
+     0,
+     8,
+     222
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "pelicans",
+    "slot": "surprises_back",
+    "at": [
+     480,
+     104
+    ],
+    "sheet": [
+     0,
+     808,
+     44,
+     7
+    ],
+    "frames": 8,
+    "ticks_per_frame": 4
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     3,
+     223,
+     1,
+     0
+    ],
+    "every": [
+     9600,
+     1,
+     640,
+     223
+    ],
+    "move": [
+     1,
+     3,
+     0,
+     1
+    ],
+    "jitter": [
+     10,
+     16,
+     223
+    ],
+    "once": false,
+    "fade": 0,
+    "name": "dolphins",
+    "slot": "surprises_back",
+    "at": [
+     262,
+     120
+    ],
+    "sheet": [
+     0,
+     815,
+     34,
+     7
+    ],
+    "frames": 8,
+    "ticks_per_frame": 3
+   },
+   {
+    "when": null,
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     3,
+     224,
+     1,
+     0
+    ],
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "sea_lion",
+    "slot": "surprises_front",
+    "at": [
+     282,
+     106
+    ],
+    "sheet": [
+     0,
+     822,
+     10,
+     5
+    ],
+    "frames": 4,
+    "ticks_per_frame": 48
+   },
+   {
+    "when": [
+     [
+      "range",
+      5,
+      1,
+      9,
+      30
+     ]
+    ],
+    "states": null,
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     6,
+     225,
+     1,
+     0
+    ],
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "sandcastle",
+    "slot": "surprises_front",
+    "at": [
+     128,
+     178
+    ],
+    "sheet": [
+     0,
+     688,
+     11,
+     8
+    ],
+    "frames": 1,
+    "ticks_per_frame": 1
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "dusk",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     7200,
+     1,
+     330,
+     226
+    ],
+    "move": [
+     1,
+     3,
+     2,
+     9
+    ],
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "crab",
+    "slot": "surprises_front",
+    "at": [
+     -6,
+     200
+    ],
+    "sheet": [
+     0,
+     827,
+     5,
+     3
+    ],
+    "frames": 2,
+    "ticks_per_frame": 2
+   },
+   {
+    "when": [
+     [
+      "range",
+      6,
+      1,
+      10,
+      31
+     ]
+    ],
+    "states": [
+     "dusk",
+     "night"
+    ],
+    "hours": [
+     16,
+     24
+    ],
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     5,
+     227,
+     1,
+     1
+    ],
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "bonfire",
+    "slot": "surprises_front",
+    "at": [
+     104,
+     212
+    ],
+    "sheet": [
+     0,
+     830,
+     9,
+     7
+    ],
+    "frames": 3,
+    "ticks_per_frame": 3
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "dusk"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     4,
+     228,
+     1,
+     0
+    ],
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "deer",
+    "slot": "surprises_front",
+    "at": [
+     150,
+     92
+    ],
+    "sheet": [
+     0,
+     837,
+     12,
+     10
+    ],
+    "frames": 4,
+    "ticks_per_frame": 40
+   },
+   {
+    "when": null,
+    "states": [
+     "dawn",
+     "day",
+     "cloudy"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": [
+     4,
+     229,
+     1,
+     0
+    ],
+    "every": null,
+    "move": null,
+    "jitter": null,
+    "once": false,
+    "fade": 0,
+    "name": "egret",
+    "slot": "surprises_front",
+    "at": [
+     162,
+     127
+    ],
+    "sheet": [
+     0,
+     847,
+     6,
+     10
+    ],
+    "frames": 4,
+    "ticks_per_frame": 40
+   },
+   {
+    "when": [
+     [
+      "range",
+      11,
+      1,
+      2,
+      29
+     ]
+    ],
+    "states": [
+     "day"
+    ],
+    "hours": null,
+    "ahead": 0,
+    "clear": false,
+    "days": null,
+    "every": [
+     1200,
+     1,
+     240,
+     230
+    ],
+    "move": [
+     1,
+     6,
+     -1,
+     14
+    ],
+    "jitter": [
+     80,
+     14,
+     230
+    ],
+    "once": false,
+    "fade": 8,
+    "name": "monarch_0",
+    "slot": "surprises_front",
+    "at": [
+     36,
+     102
+    ],
+    "sheet": [
+     0,
+     857,
+     3,
+     2
+    ],
+    "frames": 2,
+    "ticks_per_frame": 2
+   },
+   {
+    "when": [
+     [
+      "range",
+      11,
+      1,
+      2,
+      29
+     ]
+    ],
+    "states": [
+     "day"
+    ],
+    "hours": null,
+    "ahead": 1,
+    "clear": false,
+    "days": null,
+    "every": [
+     1520,
+     1,
+     240,
+     231
+    ],
+    "move": [
+     1,
+     6,
+     -1,
+     14
+    ],
+    "jitter": [
+     80,
+     14,
+     231
+    ],
+    "once": false,
+    "fade": 8,
+    "name": "monarch_1",
+    "slot": "surprises_front",
+    "at": [
+     36,
+     102
+    ],
+    "sheet": [
+     0,
+     857,
+     3,
+     2
+    ],
+    "frames": 2,
+    "ticks_per_frame": 2
+   },
+   {
+    "when": [
+     [
+      "range",
+      11,
+      1,
+      2,
+      29
+     ]
+    ],
+    "states": [
+     "day"
+    ],
+    "hours": null,
+    "ahead": 2,
+    "clear": false,
+    "days": null,
+    "every": [
+     1840,
+     1,
+     240,
+     232
+    ],
+    "move": [
+     1,
+     6,
+     -1,
+     14
+    ],
+    "jitter": [
+     80,
+     14,
+     232
+    ],
+    "once": false,
+    "fade": 8,
+    "name": "monarch_2",
+    "slot": "surprises_front",
+    "at": [
+     36,
+     102
+    ],
+    "sheet": [
+     0,
+     857,
+     3,
+     2
+    ],
+    "frames": 2,
+    "ticks_per_frame": 2
+   }
+  ],
+  "meteors": {
+   "slot_ms": 20000,
+   "one_in": 15,
+   "life_ms": 520,
+   "fade_ms": 160,
+   "box": [
+    90,
+    4,
+    470,
+    64
+   ],
+   "speed": [
+    210,
+    360
+   ],
+   "slope": [
+    25,
+    80
+   ],
+   "tail": 12,
+   "salt": 240,
+   "levels": [
+    "MOON",
+    "STAR_B",
+    "STAR_C"
+   ],
+   "showers": [
+    [
+     1,
+     3,
+     1,
+     4,
+     3
+    ],
+    [
+     4,
+     21,
+     4,
+     22,
+     4
+    ],
+    [
+     8,
+     11,
+     8,
+     13,
+     2
+    ],
+    [
+     10,
+     20,
+     10,
+     21,
+     4
+    ],
+    [
+     11,
+     16,
+     11,
+     17,
+     4
+    ],
+    [
+     12,
+     13,
+     12,
+     14,
+     2
+    ]
+   ],
+   "note": "showers: [month, day, month, day, one_in]: the Quadrantids, Lyrids, Perseids, Orionids, Leonids and Geminids."
+  },
+  "tints": [
+   {
+    "name": "glowing_surf",
+    "states": [
+     "night"
+    ],
+    "when": [
+     [
+      "range",
+      8,
+      1,
+      10,
+      31
+     ]
+    ],
+    "days": [
+     6,
+     241,
+     1,
+     1
+    ],
+    "roles": {
+     "FOAM": "7DF9FF",
+     "FOAM_BACK": "2FB8E0"
+    }
+   }
+  ],
+  "note": "An item shows its sprite with the top-left pixel at `at` when the order reaches its slot, on a date that one of the rules of `when` names (scene.special_on), in the lighting states of `states` and from the hour hours[0] up to, not including, hours[1] (null: all). Its frame is ((tick + ahead) // ticks_per_frame) % frames; frame k is the part of the sheet at x = sheet[0] + k * sheet[2]. An item with days, every, move, jitter, once, fade or clear is a surprise: tools/scene_surprises.py describes those fields, the meteors and the tints; scene.special_piece, scene.meteor and scene.frame_colours read them."
+ },
+ "full_layers": {
+  "stars": "stars.png",
+  "sea_fx": "sea_fx.png",
+  "path_sun": "path_sun.png",
+  "path_moon": "path_moon.png",
+  "hill": "hill.png",
+  "lighthouse": "lighthouse.png",
+  "house_back": "house_back.png",
+  "house_front": "house_front.png"
+ },
+ "house": {
+  "cast": {
+   "file": "layers/house_cast.png",
+   "at": [
+    -189,
+    -11
+   ],
+   "ground": "outline",
+   "moves": []
+  },
+  "note": "The doghouse. house_back and house_front are full layers (full_layers), stamped before and after the dog. At house_shadow the part cast throws its shadow as a part of a pose does (see dog.note), with the dog's leans; at is from (dog.x, dog.y) like a part's. pose: the dog in the doorway, in the format of one of dog.poses; it is no part of their order. stay: he spends pose slot s (dog.pose_change) in the house, in pose, when at one of look_minutes minutes after the slot's first tick (s * hold; its minute of the day is the frame's time moved by the ticks from that tick to the frame's, floor) the weather of that minute is rain; or when at one of them the state of that minute and its weather is night and hash(s, 2, salt) % out_one_in is not 0 (scene.in_house).",
+  "pose": {
+   "name": "door",
+   "parts": [
+    {
+     "file": "dog_belly.png",
+     "at": [
+      -223,
+      41
+     ],
+     "ground": 35,
+     "moves": [
+      {
+       "name": "breath",
+       "timetable": {
+        "period": 41,
+        "length": 17
+       },
+       "ticks_per_frame": 1,
+       "frames": [
+        [
+         {
+          "op": "shift",
+          "rect": [
+           56,
+           8,
+           27,
+           2
+          ],
+          "dx": 0,
+          "dy": -1,
+          "fill": "COAT"
+         }
+        ]
+       ]
+      },
+      {
+       "name": "blink",
+       "timetable": {
+        "slot": 31,
+        "length": 2,
+        "spread": 24,
+        "chance": [
+         2,
+         3
+        ],
+        "salt": 291
+       },
+       "ticks_per_frame": 1,
+       "frames": [
+        [
+         {
+          "op": "recolour",
+          "cells": [
+           [
+            108,
+            23
+           ],
+           [
+            109,
+            23
+           ]
+          ],
+          "to": "COAT"
+         }
+        ]
+       ]
+      },
+      {
+       "name": "ear",
+       "timetable": {
+        "slot": 89,
+        "length": 6,
+        "spread": 70,
+        "chance": [
+         1,
+         2
+        ],
+        "salt": 293
+       },
+       "ticks_per_frame": 1,
+       "frames": [
+        [
+         {
+          "op": "recolour",
+          "cells": [
+           [
+            98,
+            23
+           ],
+           [
+            99,
+            23
+           ],
+           [
+            100,
+            23
+           ],
+           [
+            101,
+            23
+           ]
+          ],
+          "to": "COAT"
+         }
+        ]
+       ]
+      },
+      {
+       "name": "tail",
+       "timetable": {
+        "slot": 463,
+        "length": 10,
+        "spread": 300,
+        "chance": [
+         1,
+         1
+        ],
+        "salt": 295
+       },
+       "ticks_per_frame": 1,
+       "frames": [
+        [
+         {
+          "op": "shift",
+          "rect": [
+           2,
+           31,
+           7,
+           4
+          ],
+          "dx": 0,
+          "dy": -1,
+          "fill": null
+         },
+         {
+          "op": "shift",
+          "rect": [
+           9,
+           34,
+           3,
+           1
+          ],
+          "dx": 0,
+          "dy": -1,
+          "fill": null
+         }
+        ],
+        [
+         {
+          "op": "shift",
+          "rect": [
+           2,
+           31,
+           7,
+           4
+          ],
+          "dx": 0,
+          "dy": -1,
+          "fill": null
+         },
+         {
+          "op": "shift",
+          "rect": [
+           9,
+           34,
+           3,
+           1
+          ],
+          "dx": 0,
+          "dy": -1,
+          "fill": null
+         }
+        ],
+        [
+         {
+          "op": "shift",
+          "rect": [
+           2,
+           31,
+           7,
+           4
+          ],
+          "dx": 0,
+          "dy": -1,
+          "fill": null
+         },
+         {
+          "op": "shift",
+          "rect": [
+           9,
+           34,
+           3,
+           1
+          ],
+          "dx": 0,
+          "dy": -1,
+          "fill": null
+         }
+        ],
+        [],
+        []
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "stay": {
+   "look_minutes": [
+    0,
+    4,
+    8
+   ],
+   "out_one_in": 6,
+   "salt": 131
+  }
+ },
+ "clear_night_only": [
+  "stars",
+  "moon",
+  "path_moon"
+ ],
+ "glints": {
+  "roles": [
+   "GLINT_0",
+   "GLINT_1",
+   "GLINT_2",
+   "GLINT_3",
+   "GLINT_4"
+  ],
+  "ticks_per_step": 6,
+  "shown": 3,
+  "note": "phase = (tick // ticks_per_step) % groups; group g shows when (g - phase) % groups < shown."
+ },
+ "paths": {
+  "prefixes": [
+   "PATH_A",
+   "PATH_B"
+  ],
+  "ticks_per_step": 4,
+  "frames": 3,
+  "note": "phase = (tick // ticks_per_step) % frames; a path role shows when its name, after the prefix, holds the digit of the phase."
+ },
+ "twinkle": {
+  "slot": 48,
+  "groups": 8,
+  "one_in": 5,
+  "salt": 41,
+  "dim_to": "STAR_C",
+  "roles": [
+   "STAR_T0",
+   "STAR_T1",
+   "STAR_T2",
+   "STAR_T3",
+   "STAR_T4",
+   "STAR_T5",
+   "STAR_T6",
+   "STAR_T7"
+  ],
+  "note": "Group g: s, at = divmod(tick + g * (slot // groups), slot). When hash(g, s, salt) % one_in == 0 it is a = slot // 2 - |at - slot // 2| parts in slot // 2 of the way to the colour of dim_to (scene.frame_colours)."
+ },
+ "beam": {
+  "file": "beam.png",
+  "at": [
+   176,
+   71
+  ],
+  "size": [
+   121,
+   23
+  ],
+  "ticks_per_frame": 8,
+  "frames": 32,
+  "note": "frame = (tick // ticks_per_frame) % frames; the strip holds the frames side by side."
+ },
+ "ripples": {
+  "file": "ripples.png",
+  "top": 100,
+  "frame_height": 170,
+  "frames": 16,
+  "ticks_per_frame": 3,
+  "weather": "rain"
+ },
+ "rain": {
+  "weather": "rain",
+  "tile": [
+   480,
+   288
+  ],
+  "lean": 4,
+  "layers": {
+   "rain_far": {
+    "file": "rain_far.png",
+    "speed": 4
+   },
+   "rain_near": {
+    "file": "rain_near.png",
+    "speed": 8
+   }
+  },
+  "note": "At tick t the tile has moved down by speed * t and left by speed * t // lean, wrapping: frame pixel (x, y) shows tile[(y - down) % tile_h][(x + left) % tile_w]."
+ },
+ "fade": {
+  "steps": 32,
+  "ticks": 64,
+  "light": {
+   "minutes": 5,
+   "steps": 300
+  },
+  "note": "A fade blends two finished frames per channel, (a * (steps - s) + b * s + steps // 2) // steps, s = 0..steps. A change of weather takes ticks ticks. A change of light (from one lighting state to the next at a fixed weather) takes light.minutes minutes in light.steps steps: into dawn or dusk in the minutes before it begins, otherwise in the minutes after the boundary (scene.state_fade)."
+ },
+ "states": {
+  "dawn": {
+   "sky": "sky_dawn.png",
+   "sea": "sea_dawn.png",
+   "sand": "sand_dawn.png",
+   "light_from": "right",
+   "sun": [
+    400,
+    87
+   ]
+  },
+  "day": {
+   "sky": "sky_day.png",
+   "sea": "sea_day.png",
+   "sand": "sand_dawn.png",
+   "light_from": "left",
+   "sun": null
+  },
+  "dusk": {
+   "sky": "sky_dusk.png",
+   "sea": "sea_dusk.png",
+   "sand": "sand_dawn.png",
+   "light_from": "left",
+   "sun": null
+  },
+  "night": {
+   "sky": "sky_day.png",
+   "sea": "sea_day.png",
+   "sand": "sand_dawn.png",
+   "light_from": "right",
+   "sun": null
+  },
+  "cloudy": {
+   "sky": "sky_day.png",
+   "sea": "sea_day.png",
+   "sand": "sand_dawn.png",
+   "light_from": "left",
+   "sun": null
+  },
+  "rain": {
+   "sky": "sky_day.png",
+   "sea": "sea_day.png",
+   "sand": "sand_rain.png",
+   "light_from": "left",
+   "sun": null
+  }
+ },
+ "states_note": "sky, sea and sand are layers baked for the lighting state (Floyd-Steinberg dithering at build time, tools/scene_dither.py); states whose layer is the same share a file.",
+ "light_note": "light_from is already in the palettes (the land roles); it is here to read, scene.py does not use it.",
+ "day_parts": {
+  "sunrise": [
+   444,
+   420,
+   382,
+   335,
+   299,
+   287,
+   299,
+   325,
+   350,
+   377,
+   410,
+   438
+  ],
+  "sunset": [
+   1034,
+   1068,
+   1096,
+   1124,
+   1151,
+   1173,
+   1172,
+   1145,
+   1099,
+   1053,
+   1020,
+   1012
+  ],
+  "summer_time": "us",
+  "dawn": [
+   -27,
+   60
+  ],
+  "dusk": [
+   -60,
+   27
+  ],
+  "note": "sunrise and sunset: minutes after midnight in standard time on the 15th of each month, January first; between two 15ths the value changes evenly by the day, and 60 is added while summer_time is on (scene.sun_times). dawn and dusk are minutes from sunrise and sunset. Night is before dawn opens and after dusk closes."
+ },
+ "sun": {
+  "file": "sun.png",
+  "centre": [
+   9,
+   9
+  ]
+ },
+ "moon": {
+  "file": "moon.png",
+  "size": 17,
+  "centre": [
+   8,
+   8
+  ],
+  "at": [
+   404,
+   68
+  ],
+  "states": [
+   "night"
+  ],
+  "epoch_jd_e9": 2451550260000000,
+  "month_e9": 29530588853,
+  "note": "Phase k of 8 (0 new) is round(8 * days since the epoch new moon / month). New draws nothing, and path_moon is drawn only when the moon is."
+ },
+ "clouds": {
+  "file": "clouds.png",
+  "shown": {
+   "clear": 2,
+   "cloudy": 8,
+   "rain": 10
+  },
+  "shown_clear": [
+   4,
+   4,
+   3,
+   3,
+   2,
+   1,
+   1,
+   1,
+   1,
+   2,
+   3,
+   4
+  ],
+  "grown": {
+   "clear": false,
+   "cloudy": true,
+   "rain": true
+  },
+  "span": 640,
+  "left": -80,
+  "note": "x = (start_x + tick // ticks_per_px) % span + left; the sprite goes at (x + dx, row + dy). The first shown[weather] tracks are drawn; in clear weather the first shown_clear[month - 1].",
+  "tracks": [
+   {
+    "row": 16,
+    "start_x": 195,
+    "ticks_per_px": 21,
+    "normal": {
+     "sheet": [
+      0,
+      0,
+      38,
+      11
+     ],
+     "dx": -5,
+     "dy": -10
+    },
+    "grown": {
+     "sheet": [
+      0,
+      13,
+      44,
+      13
+     ],
+     "dx": -8,
+     "dy": -12
+    }
+   },
+   {
+    "row": 39,
+    "start_x": 12,
+    "ticks_per_px": 22,
+    "normal": {
+     "sheet": [
+      38,
+      0,
+      44,
+      11
+     ],
+     "dx": -6,
+     "dy": -10
+    },
+    "grown": {
+     "sheet": [
+      44,
+      13,
+      50,
+      13
+     ],
+     "dx": -9,
+     "dy": -12
+    }
+   },
+   {
+    "row": 18,
+    "start_x": 539,
+    "ticks_per_px": 22,
+    "normal": {
+     "sheet": [
+      82,
+      0,
+      36,
+      11
+     ],
+     "dx": -6,
+     "dy": -10
+    },
+    "grown": {
+     "sheet": [
+      94,
+      13,
+      42,
+      13
+     ],
+     "dx": -9,
+     "dy": -12
+    }
+   },
+   {
+    "row": 41,
+    "start_x": 119,
+    "ticks_per_px": 24,
+    "normal": {
+     "sheet": [
+      118,
+      0,
+      40,
+      13
+     ],
+     "dx": -7,
+     "dy": -12
+    },
+    "grown": {
+     "sheet": [
+      136,
+      13,
+      46,
+      15
+     ],
+     "dx": -10,
+     "dy": -14
+    }
+   },
+   {
+    "row": 20,
+    "start_x": 252,
+    "ticks_per_px": 19,
+    "normal": {
+     "sheet": [
+      158,
+      0,
+      44,
+      11
+     ],
+     "dx": -6,
+     "dy": -10
+    },
+    "grown": {
+     "sheet": [
+      182,
+      13,
+      50,
+      13
+     ],
+     "dx": -9,
+     "dy": -12
+    }
+   },
+   {
+    "row": 43,
+    "start_x": 381,
+    "ticks_per_px": 19,
+    "normal": {
+     "sheet": [
+      202,
+      0,
+      41,
+      11
+     ],
+     "dx": -5,
+     "dy": -10
+    },
+    "grown": {
+     "sheet": [
+      232,
+      13,
+      47,
+      13
+     ],
+     "dx": -8,
+     "dy": -12
+    }
+   },
+   {
+    "row": 22,
+    "start_x": 165,
+    "ticks_per_px": 23,
+    "normal": {
+     "sheet": [
+      243,
+      0,
+      41,
+      11
+     ],
+     "dx": -5,
+     "dy": -10
+    },
+    "grown": {
+     "sheet": [
+      279,
+      13,
+      47,
+      13
+     ],
+     "dx": -8,
+     "dy": -12
+    }
+   },
+   {
+    "row": 45,
+    "start_x": 313,
+    "ticks_per_px": 21,
+    "normal": {
+     "sheet": [
+      284,
+      0,
+      58,
+      11
+     ],
+     "dx": -6,
+     "dy": -10
+    },
+    "grown": {
+     "sheet": [
+      326,
+      13,
+      64,
+      13
+     ],
+     "dx": -9,
+     "dy": -12
+    }
+   },
+   {
+    "row": 24,
+    "start_x": 117,
+    "ticks_per_px": 24,
+    "normal": {
+     "sheet": [
+      342,
+      0,
+      33,
+      11
+     ],
+     "dx": -7,
+     "dy": -10
+    },
+    "grown": {
+     "sheet": [
+      390,
+      13,
+      39,
+      13
+     ],
+     "dx": -10,
+     "dy": -12
+    }
+   },
+   {
+    "row": 47,
+    "start_x": 337,
+    "ticks_per_px": 18,
+    "normal": {
+     "sheet": [
+      375,
+      0,
+      42,
+      10
+     ],
+     "dx": -5,
+     "dy": -9
+    },
+    "grown": {
+     "sheet": [
+      429,
+      13,
+      48,
+      13
+     ],
+     "dx": -8,
+     "dy": -12
+    }
+   }
+  ]
+ },
+ "foam": {
+  "file": "foam.png",
+  "top": 100,
+  "frame_height": 170,
+  "frames": 152,
+  "ticks_per_frame": 1
+ },
+ "dog": {
+  "x": 189,
+  "y": 165,
+  "shadow": {
+   "day": [
+    1,
+    6,
+    1,
+    10
+   ],
+   "dawn": [
+    -3,
+    4,
+    1,
+    5
+   ],
+   "dusk": [
+    3,
+    4,
+    1,
+    5
+   ],
+   "night": [
+    -2,
+    5,
+    1,
+    6
+   ],
+   "cloudy": [
+    1,
+    10,
+    1,
+    14
+   ],
+   "rain": [
+    1,
+    10,
+    1,
+    14
+   ],
+   "no_moon": [
+    0,
+    1,
+    1,
+    14
+   ]
+  },
+  "shadow_day": [
+   [
+    1,
+    4,
+    1,
+    7
+   ],
+   [
+    1,
+    4,
+    1,
+    7
+   ],
+   [
+    1,
+    6,
+    1,
+    10
+   ],
+   [
+    1,
+    6,
+    1,
+    10
+   ],
+   [
+    1,
+    8,
+    1,
+    12
+   ],
+   [
+    1,
+    8,
+    1,
+    12
+   ],
+   [
+    1,
+    8,
+    1,
+    12
+   ],
+   [
+    1,
+    8,
+    1,
+    12
+   ],
+   [
+    1,
+    6,
+    1,
+    10
+   ],
+   [
+    1,
+    6,
+    1,
+    10
+   ],
+   [
+    1,
+    4,
+    1,
+    7
+   ],
+   [
+    1,
+    4,
+    1,
+    7
+   ]
+  ],
+  "shadow_thick": {
+   "day": 3,
+   "dawn": 2,
+   "dusk": 2,
+   "night": 2,
+   "cloudy": 2,
+   "rain": 2,
+   "no_moon": 2
+  },
+  "shadow_onto": {
+   "TOWEL_A": "TOWEL_A_SHADE",
+   "TOWEL_B": "TOWEL_B_SHADE"
+  },
+  "poses": [
+   {
+    "name": "stand",
+    "parts": [
+     {
+      "file": "dog.png",
+      "at": [
+       0,
+       0
+      ],
+      "ground": 75,
+      "moves": [
+       {
+        "name": "breath",
+        "timetable": {
+         "period": 37,
+         "length": 15
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            43,
+            39,
+            18,
+            3
+           ],
+           "dx": 0,
+           "dy": 1,
+           "fill": "COAT_UNDER"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "blink",
+        "timetable": {
+         "slot": 29,
+         "length": 2,
+         "spread": 24,
+         "chance": [
+          2,
+          3
+         ],
+         "salt": 91
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             110,
+             12
+            ],
+            [
+             111,
+             12
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "ear",
+        "timetable": {
+         "slot": 83,
+         "length": 6,
+         "spread": 70,
+         "chance": [
+          1,
+          2
+         ],
+         "salt": 93
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             100,
+             12
+            ],
+            [
+             101,
+             12
+            ],
+            [
+             102,
+             12
+            ],
+            [
+             103,
+             12
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "tail",
+        "timetable": {
+         "slot": 131,
+         "length": 40,
+         "spread": 60,
+         "chance": [
+          2,
+          3
+         ],
+         "salt": 95
+        },
+        "ticks_per_frame": 5,
+        "frames": [
+         [
+          {
+           "op": "shear",
+           "rect": [
+            4,
+            44,
+            12,
+            15
+           ],
+           "dx": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+           ]
+          }
+         ],
+         [],
+         [
+          {
+           "op": "shear",
+           "rect": [
+            4,
+            44,
+            12,
+            15
+           ],
+           "dx": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2,
+            -2
+           ]
+          }
+         ],
+         []
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "sit",
+    "parts": [
+     {
+      "file": "dog_sit.png",
+      "at": [
+       -8,
+       -20
+      ],
+      "ground": 95,
+      "moves": [
+       {
+        "name": "breath",
+        "timetable": {
+         "period": 37,
+         "length": 15
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            90,
+            42,
+            4,
+            9
+           ],
+           "dx": 1,
+           "dy": 0,
+           "fill": "WHITE"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "blink",
+        "timetable": {
+         "slot": 29,
+         "length": 2,
+         "spread": 24,
+         "chance": [
+          2,
+          3
+         ],
+         "salt": 191
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             99,
+             13
+            ],
+            [
+             100,
+             13
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "ear",
+        "timetable": {
+         "slot": 83,
+         "length": 6,
+         "spread": 70,
+         "chance": [
+          1,
+          2
+         ],
+         "salt": 193
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             89,
+             13
+            ],
+            [
+             90,
+             13
+            ],
+            [
+             91,
+             13
+            ],
+            [
+             92,
+             13
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "tail",
+        "timetable": {
+         "slot": 449,
+         "length": 10,
+         "spread": 300,
+         "chance": [
+          1,
+          1
+         ],
+         "salt": 195
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            21,
+            91,
+            11,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            21,
+            91,
+            11,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            21,
+            91,
+            11,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [],
+         []
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "sphinx",
+    "parts": [
+     {
+      "file": "dog_sphinx.png",
+      "at": [
+       -27,
+       0
+      ],
+      "ground": 75,
+      "moves": [
+       {
+        "name": "breath",
+        "timetable": {
+         "slot": 38,
+         "length": 17,
+         "spread": 5,
+         "chance": [
+          1,
+          1
+         ],
+         "salt": 410
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            66,
+            46,
+            14,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "blink",
+        "timetable": {
+         "slot": 67,
+         "length": 2,
+         "spread": 22,
+         "chance": [
+          1,
+          1
+         ],
+         "salt": 411
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             116,
+             31
+            ],
+            [
+             117,
+             31
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "ear",
+        "timetable": {
+         "slot": 281,
+         "length": 6,
+         "spread": 40,
+         "chance": [
+          1,
+          1
+         ],
+         "salt": 412
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             106,
+             31
+            ],
+            [
+             107,
+             31
+            ],
+            [
+             108,
+             31
+            ],
+            [
+             109,
+             31
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "tail",
+        "timetable": {
+         "slot": 367,
+         "length": 13,
+         "spread": 100,
+         "chance": [
+          5,
+          6
+         ],
+         "salt": 413
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            8,
+            73,
+            10,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            8,
+            73,
+            10,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            8,
+            73,
+            10,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          },
+          {
+           "op": "shift",
+           "rect": [
+            8,
+            72,
+            3,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            8,
+            73,
+            10,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          },
+          {
+           "op": "shift",
+           "rect": [
+            8,
+            72,
+            3,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            8,
+            73,
+            10,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          },
+          {
+           "op": "shift",
+           "rect": [
+            8,
+            72,
+            3,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [],
+         [],
+         []
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "belly",
+    "parts": [
+     {
+      "file": "dog_belly.png",
+      "at": [
+       -30,
+       40
+      ],
+      "ground": 35,
+      "moves": [
+       {
+        "name": "breath",
+        "timetable": {
+         "period": 41,
+         "length": 17
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            56,
+            8,
+            27,
+            2
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "blink",
+        "timetable": {
+         "slot": 31,
+         "length": 2,
+         "spread": 24,
+         "chance": [
+          2,
+          3
+         ],
+         "salt": 291
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             108,
+             23
+            ],
+            [
+             109,
+             23
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "ear",
+        "timetable": {
+         "slot": 89,
+         "length": 6,
+         "spread": 70,
+         "chance": [
+          1,
+          2
+         ],
+         "salt": 293
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             98,
+             23
+            ],
+            [
+             99,
+             23
+            ],
+            [
+             100,
+             23
+            ],
+            [
+             101,
+             23
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "tail",
+        "timetable": {
+         "slot": 463,
+         "length": 10,
+         "spread": 300,
+         "chance": [
+          1,
+          1
+         ],
+         "salt": 295
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            2,
+            31,
+            7,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          },
+          {
+           "op": "shift",
+           "rect": [
+            9,
+            34,
+            3,
+            1
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            2,
+            31,
+            7,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          },
+          {
+           "op": "shift",
+           "rect": [
+            9,
+            34,
+            3,
+            1
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            2,
+            31,
+            7,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          },
+          {
+           "op": "shift",
+           "rect": [
+            9,
+            34,
+            3,
+            1
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [],
+         []
+        ]
+       }
+      ]
+     },
+     {
+      "file": "ball.png",
+      "at": [
+       91,
+       66
+      ],
+      "ground": "outline"
+     }
+    ]
+   },
+   {
+    "name": "side",
+    "parts": [
+     {
+      "file": "dog_side.png",
+      "at": [
+       -46,
+       42
+      ],
+      "ground": "outline",
+      "moves": [
+       {
+        "name": "tail",
+        "timetable": {
+         "slot": 463,
+         "length": 10,
+         "spread": 300,
+         "chance": [
+          1,
+          1
+         ],
+         "salt": 295
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            62,
+            35,
+            8,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            62,
+            35,
+            8,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [
+          {
+           "op": "shift",
+           "rect": [
+            62,
+            35,
+            8,
+            4
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": null
+          }
+         ],
+         [],
+         []
+        ]
+       }
+      ]
+     },
+     {
+      "file": "dog_side_front.png",
+      "at": [
+       -46,
+       42
+      ],
+      "ground": 31,
+      "moves": [
+       {
+        "name": "breath",
+        "timetable": {
+         "period": 41,
+         "length": 17
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            72,
+            7,
+            30,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "blink",
+        "timetable": {
+         "slot": 31,
+         "length": 2,
+         "spread": 24,
+         "chance": [
+          2,
+          3
+         ],
+         "salt": 291
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             124,
+             13
+            ],
+            [
+             125,
+             13
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       },
+       {
+        "name": "ear",
+        "timetable": {
+         "slot": 89,
+         "length": 6,
+         "spread": 70,
+         "chance": [
+          1,
+          2
+         ],
+         "salt": 293
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "recolour",
+           "cells": [
+            [
+             114,
+             13
+            ],
+            [
+             115,
+             13
+            ],
+            [
+             116,
+             13
+            ],
+            [
+             117,
+             13
+            ]
+           ],
+           "to": "COAT"
+          }
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "file": "dog_side_leg.png",
+      "at": [
+       -46,
+       42
+      ],
+      "ground": "outline"
+     },
+     {
+      "file": "ball.png",
+      "at": [
+       91,
+       66
+      ],
+      "ground": "outline"
+     }
+    ]
+   },
+   {
+    "name": "curl",
+    "parts": [
+     {
+      "file": "dog_curl.png",
+      "at": [
+       0,
+       35
+      ],
+      "ground": "outline",
+      "moves": [
+       {
+        "name": "breath",
+        "timetable": {
+         "period": 44,
+         "length": 20
+        },
+        "ticks_per_frame": 1,
+        "frames": [
+         [
+          {
+           "op": "shift",
+           "rect": [
+            24,
+            4,
+            28,
+            3
+           ],
+           "dx": 0,
+           "dy": -1,
+           "fill": "COAT"
+          }
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "file": "towel.png",
+      "at": [
+       -11,
+       62
+      ],
+      "flat": true
+     }
+    ]
+   }
+  ],
+  "pose_change": {
+   "hold": 2400,
+   "jitter": 1440,
+   "fade_ticks": 16,
+   "salt": 97,
+   "order_salt": 98
+  },
+  "note": "Each part of a pose is a file in art/, placed with its top-left corner at (x + at[0], y + at[1]); every frame of a part is its image with the active moves applied in order. At dog_shadow the flat parts are stamped, then each other part casts its shadow; at dog the other parts are stamped, in order. ground is a row for every column, or \"outline\": the lowest opaque row of each column of the file. shadow[key] = [ax, bx, ay, by]: a part pixel (px, py) at h = max(0, ground(px) - py) casts onto column x + at[0] + px + h * ax // bx, rows top .. top + thick - 1 with top = y + at[1] + ground(px) + h * ay // by, floor division (Java: Math.floorDiv). It lands only where the frame held, before any shadow was laid, a sand role (it becomes DOG_SHADOW) or a key of shadow_onto (it becomes the value). key is the state, or \"no_moon\" in a state that has a moon (moon.states) while no moon is drawn (frame 0, or weather that hides the clear-night layers). By day the lean is the month's entry of shadow_day, January first. pose_change: see scene.pose_at; a change is a whole-frame fade of fade_ticks ticks between the frames of the two poses."
+ },
+ "text": {
+  "font": "font.png",
+  "chars": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,!?'-:&/()+\"",
+  "cell": [
+   7,
+   9
+  ],
+  "advance": 6,
+  "line": 9,
+  "digits": "digits.png",
+  "digit_cells": {
+   "0": [
+    0,
+    0,
+    13,
+    21
+   ],
+   "1": [
+    13,
+    0,
+    5,
+    21
+   ],
+   "2": [
+    18,
+    0,
+    13,
+    21
+   ],
+   "3": [
+    31,
+    0,
+    13,
+    21
+   ],
+   "4": [
+    44,
+    0,
+    13,
+    21
+   ],
+   "5": [
+    57,
+    0,
+    13,
+    21
+   ],
+   "6": [
+    70,
+    0,
+    13,
+    21
+   ],
+   "7": [
+    83,
+    0,
+    13,
+    21
+   ],
+   "8": [
+    96,
+    0,
+    13,
+    21
+   ],
+   "9": [
+    109,
+    0,
+    13,
+    21
+   ],
+   ":": [
+    122,
+    0,
+    5,
+    21
+   ]
+  },
+  "margin_x": 25,
+  "margin_y": 15,
+  "opacity": {
+   "dawn": 92,
+   "day": 100,
+   "dusk": 92,
+   "night": 80,
+   "cloudy": 100,
+   "rain": 100
+  },
+  "quotes": "quotes.txt",
+  "quote_chars": 24,
+  "quote_lines": 4,
+  "quote_salt": 113,
+  "quote_epoch_year": 2026
+ }
+}
