@@ -20,8 +20,9 @@ import java.util.Map;
  * tick and anything multiplied by it, and the hash on the low 32 bits of its inputs.
  *
  * Everything is read and decoded in the constructor. A frame reuses the same buffers; the only things it may allocate
- * are the date line and the wrapped quote, which are kept per date and hour (same result, made once an hour), and a
- * LocalDate at the first minute of a day, to find the minute before.
+ * are the date line and the wrapped quote, which are kept per date and hour (same result, made once an hour), a
+ * LocalDate at the first minute of a day, to find the minute before, and, with a pose in the doghouse's doorway, the
+ * LocalDateTime of each minute inHouse looks at (a few for each frame).
  */
 public final class Scene {
 

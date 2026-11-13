@@ -44,7 +44,8 @@ def artDir = findProperty('artDir')
 tasks.register('syncArt', Sync) {
     inputs.property('artDir', artDir ?: '')
     from(artDir ?: '../art') {
-        include 'scene.json', 'LICENSE', 'dog*.png', 'ball.png', 'towel.png', 'quotes.txt', 'layers/**', 'palettes/**'
+        // Everything but the reference frames, as dev/apk_check.py expects: a pose's new part file needs no line here.
+        exclude 'reference/**', '**/.DS_Store'
     }
     into layout.buildDirectory.dir('art-assets/art')
 }

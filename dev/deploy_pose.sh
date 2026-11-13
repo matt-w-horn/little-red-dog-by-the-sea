@@ -44,8 +44,8 @@ echo "   the screensaver shows $POSE in $wait_s s"
 sleep "$wait_s"
 state="$(tv "dumpsys power | grep mWakefulness=; dumpsys window | grep mCurrentFocus")"; echo "$state"
 echo "$state" | grep "DreamActivity" > /dev/null || { echo "The screensaver is not in front. Not confirmed."; exit 1; }
+shot_time="$(date '+%Y-%m-%d %H:%M:%S')"      # before the screenshot, as in deploy_scene.sh: taking it takes seconds
 tv_shot "shots/$SHOT.png"
-shot_time="$(date '+%Y-%m-%d %H:%M:%S')"
 
 echo "== 4. compare with the Python render ($shot_time)"
 python3 -I dev/pose_on_tv.py "$POSE" "shots/$SHOT.png" "$shot_time"

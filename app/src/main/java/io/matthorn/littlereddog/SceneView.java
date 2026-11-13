@@ -456,10 +456,11 @@ public class SceneView extends SurfaceView implements Choreographer.FrameCallbac
         slot.bright = 0;
         slot.curve = -1;
         if (fast == 0 && bright != 0) {
-            slot.bright = bright > 0 ? bright : BRIGHT_LEVELS[(int) ((ms - brightSince) / BRIGHT_MS % BRIGHT_LEVELS.length)];
+            // floorDiv and floorMod: ms is before brightSince when the wall clock was set back
+            slot.bright = bright > 0 ? bright : BRIGHT_LEVELS[(int) Math.floorMod(Math.floorDiv(ms - brightSince, (long) BRIGHT_MS), (long) BRIGHT_LEVELS.length)];
         } else if (fast == 0 && curve != 0) {
             slot.bright = CURVE_PERCENT;
-            slot.curve = curve > 0 ? curve - 1 : (int) ((ms - brightSince) / BRIGHT_MS % Dim.CURVE_NAMES.length);
+            slot.curve = curve > 0 ? curve - 1 : (int) Math.floorMod(Math.floorDiv(ms - brightSince, (long) BRIGHT_MS), (long) Dim.CURVE_NAMES.length);
         }
     }
 

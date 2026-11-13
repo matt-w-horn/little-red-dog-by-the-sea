@@ -32,7 +32,11 @@ if [ -n "${CLEANYOURTV:-}" ]; then
   tv_run() { "$_TV_PY" -I "$CLEANYOURTV/tools/tv.py" "$@"; }
   tv_install() {
     "$_TV_PY" -I "$CLEANYOURTV/tools/b64push.py" "$1" /data/local/tmp/littlereddog.apk >/dev/null
-    tv_run "pm install -r /data/local/tmp/littlereddog.apk; rm -f /data/local/tmp/littlereddog.apk"
+    # This client answers 0 whatever the command's status on the TV was, so the answer is read: pm says Success.
+    local _out
+    _out="$(tv_run "pm install -r /data/local/tmp/littlereddog.apk; rm -f /data/local/tmp/littlereddog.apk")" || return 1
+    printf '%s\n' "$_out"
+    case "$_out" in *Success*) ;; *) echo "pm install did not answer Success: not installed" >&2; return 1 ;; esac
   }
   tv_screenshot() { "$_TV_PY" -I "$CLEANYOURTV/tools/tv.py" --screenshot "$1"; }
 else

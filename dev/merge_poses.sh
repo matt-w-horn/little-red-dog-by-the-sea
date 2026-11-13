@@ -97,7 +97,8 @@ echo "== 5. into the add-on"
 mkdir -p "$ADDON/tools/poses"
 rsync -a --checksum --delete "$STAGE/tools/poses/" "$ADDON/tools/poses/"
 rsync -a --checksum --delete "$STAGE/art/" "$ADDON/art/"
-diff -rq "$STAGE/art" "$ADDON/art" && diff -rq -x __pycache__ "$STAGE/tools" "$ADDON/tools"
+diff -rq "$STAGE/art" "$ADDON/art"      # one command a line: set -e does not stop on the left side of &&
+diff -rq -x __pycache__ "$STAGE/tools" "$ADDON/tools"
 echo "   the add-on equals the staging copy; poses: $(ls "$ADDON/tools/poses" | tr '\n' ' ')"
 
 echo "== 6. Gradle"
@@ -106,8 +107,9 @@ gradle_run testReleaseUnitTest lintRelease assembleRelease
 gradle_ok
 python3 -I - <<'EOF'
 import glob, hashlib, os, re, sys, time
-bad = False
-for f in sorted(glob.glob('app/build/test-results/testReleaseUnitTest/*.xml')):
+results = sorted(glob.glob('app/build/test-results/testReleaseUnitTest/*.xml'))
+bad = not results                                           # no result file is no result
+for f in results:
     tests, skipped, failures, errors, stamp = re.search(
         r'tests="(\d+)" skipped="(\d+)" failures="(\d+)" errors="(\d+)" timestamp="([^"]+)"', open(f).read(400)).groups()
     print(f'   {os.path.basename(f)}: tests {tests}, skipped {skipped}, failures {failures}, errors {errors}, at {stamp} UTC')
@@ -116,7 +118,7 @@ for f in sorted(glob.glob('app/build/test-results/testReleaseUnitTest/*.xml')):
 apk = 'app/build/outputs/apk/release/app-release.apk'
 print(f'   {apk}: {os.path.getsize(apk)} bytes, sha256 {hashlib.sha256(open(apk, "rb").read()).hexdigest()[:16]}, '
       f'built {time.strftime("%H:%M:%S", time.localtime(os.path.getmtime(apk)))}')
-sys.exit('tests failed, or their results are not from this run' if bad else 0)
+sys.exit('tests failed, or there are no results from this run' if bad else 0)
 EOF
 python3 -I "$REPO/dev/apk_check.py" app/build/outputs/apk/release/app-release.apk art
 echo "   lint: $(tail -1 app/build/reports/lint-results-release.txt)"
@@ -130,6 +132,8 @@ if [ -e "$REPO/quotes.private.txt" ]; then
   cp -Rp "$ADDON/tools" "$ADDON/art" "$PRIV/"
   rm -rf "$PRIV/tools/__pycache__"
   cp "$REPO/quotes.private.txt" "$PRIV/art/quotes.txt"
+  # scene_build.py checked the font and the line count of art/quotes.txt in step 2; this list is checked here.
+  (cd "$PRIV" && python3 -I -B -c "import sys; sys.path.insert(0, 'tools'); import scene_build; scene_build.check_quotes()" | sed 's/^/   /')
   (cd "$PRIV" && python3 -I tools/scene_export.py | tail -2)
   quote_check "$PRIV/tools"
   gradle_run testReleaseUnitTest assembleRelease "-PartDir=$PRIV/art"

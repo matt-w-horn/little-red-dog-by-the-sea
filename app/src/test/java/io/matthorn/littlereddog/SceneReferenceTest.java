@@ -204,6 +204,8 @@ public class SceneReferenceTest {
         List<String> lines = Files.readAllLines(file.toPath(), StandardCharsets.UTF_8);
         String door = lines.get(0).split(" ")[1];
         assertEquals("the doorway's pose comes after the poses of the schedule", s.poseCount(), s.pose(door));
+        List<String> names = poseNames();
+        assertEquals("poses in scene.json and in Scene", names.size(), s.poseCount());
         int[] got = new int[3];
         int inHouse = 0, outAtNight = 0, fadesWithHouse = 0;
         StringBuilder differ = new StringBuilder();
@@ -212,7 +214,7 @@ public class SceneReferenceTest {
             java.time.ZonedDateTime t = java.time.Instant.ofEpochMilli(ms).atZone(HOME);
             s.placeAt(got, t.getYear(), t.getMonthValue(), t.getDayOfMonth(), t.getHour(), t.getMinute(), t.getSecond(),
                     t.getNano() / 1000, Math.floorDiv(ms * s.ticksPerSecond, 1000L));
-            String mine = ms + "\t" + (got[0] < 0 ? "-" : name(s, got[0], door)) + "\t" + name(s, got[1], door)
+            String mine = ms + "\t" + (got[0] < 0 ? "-" : name(names, got[0], door)) + "\t" + name(names, got[1], door)
                     + "\t" + (got[2] < 0 ? "-" : String.valueOf(got[2]));
             if (!mine.equals(line)) differ.append("\n  python ").append(line).append("  java ").append(mine);
             boolean night = s.chooseState(t.getYear(), t.getMonthValue(), t.getDayOfMonth(), t.getHour(), t.getMinute(),
@@ -229,9 +231,18 @@ public class SceneReferenceTest {
         assertTrue("no fade into or out of the house", fadesWithHouse > 20);
     }
 
-    private static String name(Scene s, int pose, String door) {
-        for (String n : new String[] {"stand", "sit", "sphinx", "belly", "side", "curl"}) if (s.pose(n) == pose) return n;
-        return pose == s.poseCount() ? door : "?" + pose;
+    /** The name of a pose index: scene.json's own (dog.poses, in order), or the doorway's after them. */
+    private static String name(List<String> names, int pose, String door) {
+        return pose >= 0 && pose < names.size() ? names.get(pose) : pose == names.size() ? door : "?" + pose;
+    }
+
+    @SuppressWarnings("unchecked")
+    private static List<String> poseNames() throws IOException {
+        Map<String, Object> sc = (Map<String, Object>) Json.parse(new String(Files.readAllBytes(new File(ART, "scene.json").toPath()),
+                StandardCharsets.UTF_8));
+        List<String> names = new java.util.ArrayList<>();
+        for (Object p : (List<Object>) ((Map<String, Object>) sc.get("dog")).get("poses")) names.add((String) ((Map<String, Object>) p).get("name"));
+        return names;
     }
 
     private static final java.time.ZoneId HOME = java.time.ZoneId.of("America/Los_Angeles");
