@@ -9,6 +9,9 @@ dependencies {
 android {
     namespace 'io.matthorn.littlereddog'
     compileSdk 34
+    // The unit tests run against the release build type: since version 9 the plugin makes test tasks for one build
+    // type only, and the gate and CI run testReleaseUnitTest.
+    testBuildType 'release'
 
     defaultConfig {
         applicationId 'io.matthorn.littlereddog'
