@@ -1,0 +1,6 @@
+# Local guard: catch a secret on the way into a commit. CI runs the same scan on every push.
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks

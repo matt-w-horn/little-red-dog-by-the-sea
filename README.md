@@ -1,7 +1,10 @@
 # Little Red Dog by the Sea
 
-A screensaver for Android TV, with a little red dog on a pixel-art beach on the coast of the San Francisco
-Bay Area, a clock and a quote that changes every hour.
+[![CI](https://github.com/matt-w-horn/little-red-dog-by-the-sea/actions/workflows/ci.yml/badge.svg)](https://github.com/matt-w-horn/little-red-dog-by-the-sea/actions/workflows/ci.yml)
+
+A pixel-art screensaver for Android TV and Google TV: a little red dog on a beach on the coast of the San Francisco
+Bay Area, with a clock and a quote that changes every hour. Day and night, the weather and the seasons follow the
+TV's clock and calendar. It is open source, asks for no permissions and never uses the network.
 
 ![One day on the beach, sped up](docs/day.gif)
 
@@ -25,7 +28,7 @@ and proposed layouts. No image it generated is shipped: every pixel in `art/` is
 - JDK 17 and the Android SDK, platform 34, to build the app.
 - Python 3 with `numpy` and `Pillow`, only to change the art. The app does not need Python.
 
-## Build and install
+## Build and install on Android TV or Google TV
 
 The app needs no permissions and no network. Build it:
 
