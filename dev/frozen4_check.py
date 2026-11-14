@@ -4,7 +4,7 @@
     python3 -I dev/frozen4_check.py --selftest    the check must fail on seven constructed faults
 
 The baseline is baseline4/ beside this file: a frozen copy of the tools and art from before the doghouse, without
-art/reference/ and without art/quotes.txt. The baseline's renderer shows the checked folder's quotes: the words may
+art/reference/ and without art/quotes.txt; its art/dog.png is replaced whenever the author changes the stand sprite. The baseline's renderer shows the checked folder's quotes: the words may
 change, and the font, the wrapping and the places of the text are still the baseline tools'.
 The author froze the stand, sit and sphinx poses (they stay byte-identical, with their places and moves):
 1. the bytes of art/dog.png, art/dog_sit.png and art/dog_sphinx.png;
