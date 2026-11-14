@@ -4,22 +4,23 @@
 
 A pixel-art screensaver for Android TV and Google TV: a little red dog on a beach on the coast of the San Francisco
 Bay Area, with a clock and a quote that changes every hour. Day and night, the weather and the seasons follow the
-TV's clock and calendar. It is open source, asks for no permissions and never uses the network.
+TV's clock and calendar. It is open source. No permissions or network are needed.
 
 ![One day on the beach, sped up](docs/day.gif)
 
-One day, sped up: on a TV the clock is the real one.
+One day, fast-forwarded (on a TV the clock moves at a normal cadence).
 
 The dog has six poses: standing, sitting, lying like a sphinx, lying on his belly, lying on his side with a ball, and
-curled asleep on a towel. The light follows the TV's clock (dawn, day, dusk, night) and the date (a palette for each
+curled asleep on a towel. The lighting follows the time of day (dawn, day, dusk, night) and the date (a palette for each
 month, holidays, plants, and small surprises that show on some days or nights).
 
 ![The six poses, one surprise, and the night](docs/poses.gif)
 
-One surprise is in this clip. There are more to find.
+(There's one small surprise is in this clip, with more to find.)
 
-Much of the code and art was made with an AI coding assistant. An image model (Gemini) cleaned up reference photos
-and proposed layouts. No image it generated is shipped: every pixel in `art/` is drawn by the tools in `tools/`.
+I implemented this with a coding assistant. I have never made pixel art before. I gave the coding assistant access
+to an image model (Gemini), to clean up reference photos and propose layouts. None of those images are included here,
+every pixel in `art/` is drawn from scratch by the tools in `tools/`.
 
 ## What you need
 
@@ -30,7 +31,7 @@ and proposed layouts. No image it generated is shipped: every pixel in `art/` is
 
 ## Build and install on Android TV or Google TV
 
-The app needs no permissions and no network. Build it:
+The app needs no permissions or internet. Build it:
 
 ```sh
 ./gradlew assembleRelease
@@ -73,9 +74,9 @@ adb shell settings put global littlereddog_demo aurora
 adb shell settings delete global littlereddog_demo
 ```
 
-## How the picture is made
+## Rendering pipeline
 
-Everything the app draws is a file under `art/`. The app packages that folder as it is. The picture is 480x270 and is
+Everything the app draws is a file under `art/`, packaged in the app as it is. The picture is 480x270 and is
 enlarged by a whole number with no filtering.
 
 | Path | What it is |
@@ -117,9 +118,9 @@ Then run the unit tests and build the app:
 - Add a quote: add a line to `art/quotes.txt`. Letters, digits and `. , ! ? ' - : & / ( ) + "` only; at most four lines
   of 24 characters. Run `tools/scene_export.py` again: it writes the new reference results.
 
-## Checks
+## Tests
 
-| Command | What it checks |
+| Command | What it verifies |
 |---|---|
 | `python3 -I -B dev/quote_rule.py tools` | A new quote every hour, each pass in its own order. |
 | `python3 -I dev/check_dates.py` | The date rules of the holidays. |
