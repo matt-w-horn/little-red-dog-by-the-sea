@@ -1199,7 +1199,7 @@
   "drawn_state": [
    "day"
   ],
-  "sha256": "8ecef07d0bd2af8eca0b5ed43ef8fd32b7aa34455d28d89c988680606abc1bd7"
+  "sha256": "cfffcb8efdfb9a18246e60ca24ed337d2d578d5c259fd841f36d2c4dcb394386"
  },
  {
   "file": "pose_sit_blink_alone_tick59.png",
@@ -1339,7 +1339,7 @@
   "drawn_state": [
    "day"
   ],
-  "sha256": "56f83f0fbb064c5aa1d844b1cd45f5aee6e552e922b13b47168a52b37a975747"
+  "sha256": "47fcadcc12904cc70d1662dd09f357ed98981c1ca4cd3b69791d851892c3a875"
  },
  {
   "file": "pose_sphinx_blink_alone_tick135.png",
@@ -1479,7 +1479,7 @@
   "drawn_state": [
    "day"
   ],
-  "sha256": "da671624c6ee16ad43a3c8ebf8505d3e52e868d5542d9ec8c0233f7f36ce14a4"
+  "sha256": "b0eb054335c98d154d267dc5055622a505e53c37f128167dd004cebe34c1f383"
  },
  {
   "file": "pose_belly_blink_alone_tick23.png",
@@ -1633,7 +1633,7 @@
   "drawn_state": [
    "day"
   ],
-  "sha256": "49f551411986defe06cece07a6e394c8abe4e70d17f360fb3eb9f49bf623dd24"
+  "sha256": "a43d3061ab8d29e997efc5eb7488ede4139a79dd3163767d6542379468c84247"
  },
  {
   "file": "pose_side_blink_alone_tick23.png",
@@ -1759,7 +1759,7 @@
   "drawn_state": [
    "day"
   ],
-  "sha256": "07b331b129cb7279f3e5fb0c4e0ae94e9035b35656141b6e07c459f8b4e8b861"
+  "sha256": "f33cf9df62bb9bd506f0f4368b6bab9cad99e710cabdc2ac07367a39269aea0d"
  },
  {
   "file": "pose_fade_step2.png",
@@ -1843,7 +1843,7 @@
   "drawn_state": [
    "cloudy"
   ],
-  "sha256": "d9ab8b3993886d388008a891344319a0e6d46887691378beb7436b2a3d77f6eb"
+  "sha256": "ddac98934939a142c65d56aa06dfc863972e47ee6a2373cca4fc2834c21cdc10"
  },
  {
   "file": "month_04_noon.png",
@@ -1913,7 +1913,7 @@
   "drawn_state": [
    "day"
   ],
-  "sha256": "190135e066b5eb97fd4037f781896996598837df654a2c86c664bf2048df034b"
+  "sha256": "c8b1144f87521a834cba6588e6d0617c47210b9e1fa43f33fb871300c7fa74d3"
  },
  {
   "file": "month_09_noon.png",
@@ -1969,7 +1969,7 @@
   "drawn_state": [
    "cloudy"
   ],
-  "sha256": "70d3be3cae4c8e1511152a7fc45c3a298b65d3a8762adfdda3d1e46116db398d"
+  "sha256": "f96e459fc56885d80322bbd7d4380f34b9d62bdc392c20e2ca659976dacaf883"
  },
  {
   "file": "mix_0125.png",
