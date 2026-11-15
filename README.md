@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/matt-w-horn/little-red-dog-by-the-sea/actions/workflows/ci.yml/badge.svg)](https://github.com/matt-w-horn/little-red-dog-by-the-sea/actions/workflows/ci.yml)
 
+**More info on how I made this on the companion [blog post](https://matthorn.io/posts/2026-11-14-little-red-dog/)**
+
 A pixel-art screensaver for Android TV and Google TV: a little red dog on a beach on the coast of the San Francisco
 Bay Area, with a clock and a quote that changes every hour. Day and night, the weather and the seasons follow the
 TV's clock and calendar. It is open source. No permissions or network are needed.
