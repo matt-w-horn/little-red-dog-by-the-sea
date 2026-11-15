@@ -23,8 +23,104 @@
         "rect": [
          90,
          42,
-         4,
-         9
+         2,
+         1
+        ],
+        "dx": 1,
+        "dy": 0,
+        "fill": "COAT_UNDER"
+       },
+       {
+        "op": "shift",
+        "rect": [
+         90,
+         43,
+         3,
+         1
+        ],
+        "dx": 1,
+        "dy": 0,
+        "fill": "COAT_UNDER"
+       },
+       {
+        "op": "shift",
+        "rect": [
+         90,
+         44,
+         3,
+         1
+        ],
+        "dx": 1,
+        "dy": 0,
+        "fill": "COAT_UNDER"
+       },
+       {
+        "op": "shift",
+        "rect": [
+         90,
+         45,
+         3,
+         1
+        ],
+        "dx": 1,
+        "dy": 0,
+        "fill": "COAT_UNDER"
+       },
+       {
+        "op": "shift",
+        "rect": [
+         90,
+         46,
+         3,
+         1
+        ],
+        "dx": 1,
+        "dy": 0,
+        "fill": "COAT"
+       },
+       {
+        "op": "shift",
+        "rect": [
+         90,
+         47,
+         3,
+         1
+        ],
+        "dx": 1,
+        "dy": 0,
+        "fill": "COAT"
+       },
+       {
+        "op": "shift",
+        "rect": [
+         90,
+         48,
+         3,
+         1
+        ],
+        "dx": 1,
+        "dy": 0,
+        "fill": "COAT"
+       },
+       {
+        "op": "shift",
+        "rect": [
+         90,
+         49,
+         3,
+         1
+        ],
+        "dx": 1,
+        "dy": 0,
+        "fill": "WHITE"
+       },
+       {
+        "op": "shift",
+        "rect": [
+         90,
+         50,
+         3,
+         1
         ],
         "dx": 1,
         "dy": 0,
